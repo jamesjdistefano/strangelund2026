@@ -152,15 +152,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.03;
-  pointer-events: none;
-  z-index: 9999;
-}
+/* Texture applied only to main content area - see .main::before */
 
 img, picture, video, canvas, svg {
   display: block;
@@ -221,19 +213,32 @@ a:focus-visible {
 .site-header {
   padding-block: var(--space-2xl) var(--space-xl);
   border-bottom: 1px solid var(--color-border);
-  background-image: url('/images/vector_forest_light_blue_4096x2304.png');
+  background-image: url('/images/home-header.png');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
   min-height: 50vh;
+  position: relative;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
 }
 
 .site-header__inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   gap: var(--space-sm);
+  min-height: 50vh;
 }
 
 .site-title {
@@ -243,6 +248,7 @@ a:focus-visible {
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
 }
 
 .site-title:hover {
@@ -278,6 +284,17 @@ a:focus-visible {
 
 .main {
   padding-block: var(--space-2xl);
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* ==========================================================================
@@ -391,6 +408,7 @@ a:focus-visible {
   line-height: 1;
   color: var(--color-text);
   white-space: nowrap;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
 }
 
 .case-study-header__title--lg {
@@ -409,6 +427,198 @@ a:focus-visible {
   font-size: var(--text-base);
   color: var(--color-text-muted);
   margin-top: var(--space-sm);
+}
+
+.case-study-header--rock-hall {
+  background-image: url('/images/rock-hall-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--rock-hall::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--rock-hall .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--super-deluxe {
+  background-image: url('/images/super-deluxe-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--super-deluxe::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--super-deluxe .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--drip {
+  background-image: url('/images/drip-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--drip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--drip .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--mailchimp {
+  background-image: url('/images/mailchimp-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--mailchimp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--mailchimp .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--boston-gov {
+  background-image: url('/images/boston-gov-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--boston-gov::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--boston-gov .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--southern-company-gas {
+  background-image: url('/images/southern-company-gas-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--southern-company-gas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--southern-company-gas .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--grammarly {
+  background-image: url('/images/grammarly-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--grammarly::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--grammarly .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--stash-wealth {
+  background-image: url('/images/stash-wealth-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--stash-wealth::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--stash-wealth .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
 }
 
 .case-study-header__sub {
@@ -489,7 +699,7 @@ a:focus-visible {
 
 .site-footer {
   padding-block: var(--space-lg);
-  border-top: 1px solid var(--color-border);
+  background-color: #000;
   color: var(--color-text-muted);
   font-size: var(--text-sm);
   text-align: center;

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Branch Studio | Strangelund</title>
+  <meta name="description" content="I didn't start a woodworking hobby. I designed a system for verified artisan practice.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mad Branch Studio | Strangelund">
+  <meta property="og:description" content="I didn't start a woodworking hobby. I designed a system for verified artisan practice.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <header class="case-study-header case-study-header--mad-branch">
+    <div class="container case-study-header__inner">
+      <h1 class="case-study-header__title">Mad Branch</h1>
+      <p class="case-study-header__lede">I didn't start a woodworking hobby.</p>
+      <p class="case-study-header__sub">I designed a system for verified artisan practice.</p>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Strangelund</a><span>›</span>Mad Branch
+  </nav>
+
+  <main class="main" id="main-content">
+    <div class="container">
+      <article class="article">
+        <div class="article-content">
+          <section>
+            <h2>The Problem</h2>
+            <p>Craft exists in opposition to system. Or so the story goes.</p>
+            <p>The maker works with their hands, responds to material, follows intuition. The technologist builds repeatable processes, scales output, optimizes efficiency. These are supposed to be different worlds.</p>
+            <p>But that framing is wrong. Every serious craftsperson operates within systems—they just don't always name them. Grain direction, wall thickness ratios, tool geometry, finishing chemistry. These are constraints that shape possibility. The artisan who ignores them makes bad work. The artisan who masters them makes work that looks like intuition but is actually informed response within a defined system.</p>
+            <p>Mad Branch is my laboratory for this idea: <strong>What happens when you design the system around the craft—including the system that verifies the craft is real?</strong></p>
+          </section>
+
+          <section>
+            <h2>The Vision</h2>
+            <p><strong>Physical Objects. Digital Models. Verified physical. Verified digital. Hold one. Download one.</strong></p>
+            <p>Every piece exists twice: as a physical object you can hold, and as a high-fidelity 3D scan you can download, rotate, examine. The physical and digital aren't separate products—they're a diptych. Two expressions of the same work, authenticated together.</p>
+            <p>In a world of AI-generated images and manufactured fakes, verification matters. Who made this? When? Is this the real thing? Mad Branch answers those questions with infrastructure, not trust.</p>
+          </section>
+
+          <section>
+            <h2>The System</h2>
+            <p>Mad Branch operates on five interconnected layers:</p>
+
+            <h3>1. Material System</h3>
+            <p>Wood is not a blank canvas. It arrives with properties that constrain what's possible:</p>
+            <ul>
+              <li><strong>Grain direction</strong> determines cutting approach and structural integrity</li>
+              <li><strong>Moisture content</strong> dictates drying time and finishing options</li>
+              <li><strong>Defects</strong> (rot, knots, voids) suggest form rather than obstruct it</li>
+              <li><strong>Species characteristics</strong> (hardness, figure, workability) define tool selection and technique</li>
+            </ul>
+            <p>I don't fight the material. I designed a practice around reading it—identifying what the piece wants to become based on what it already is. This isn't mysticism. It's constraint recognition.</p>
+            <p>The system: Assess the blank. Identify the constraints. Let the constraints suggest the form.</p>
+
+            <h3>2. Craft System</h3>
+            <p>Early work was complex—compound curves, live edges, decorative features. It was also bad.</p>
+            <p>Experienced turners taught me that quality lives in simplicity: one continuous curve, mirrored inside and out, at consistent wall thickness. The craft system I now use:</p>
+            <ul>
+              <li><strong>Proportion ratios</strong> (rim to height to foot) that produce pleasing forms</li>
+              <li><strong>Measurement checkpoints</strong> during turning, not just at the end</li>
+              <li><strong>Progressive refinement</strong> rather than additive complexity</li>
+              <li><strong>Finish protocols</strong> matched to intended use</li>
+            </ul>
+            <p>This is a system. It's repeatable. It produces consistent quality. And within it, there's infinite room for variation—because the constraints create the space for meaningful choices.</p>
+
+            <h3>3. Digital Twin System</h3>
+            <p>Every finished piece gets scanned with LIDAR (KIRI Engine on iPhone) to produce a high-fidelity 3D model.</p>
+            <p><strong>Two versions for two purposes:</strong></p>
+            <ul>
+              <li><strong>Web display:</strong> 2K-4K textures, 2-5MB — for website, NFT, gallery</li>
+              <li><strong>Production:</strong> 8K textures, 20-50MB — for licensed reproduction via 3D printing, CNC, or casting</li>
+            </ul>
+            <p>The web version loads fast and looks great on screen. The production version preserves every detail for potential reproduction.</p>
+            <p>The scroll-based homepage lets visitors explore pieces by scrolling—the model rotates, the diptych reveals itself: physical photograph on one side, digital model on the other.</p>
+
+            <h3>4. Verification System</h3>
+            <p>This is where Mad Branch becomes a systems project, not just a craft project.</p>
+            <p><strong>The problem:</strong> How do you prove a physical object is authentic? How do you prove a digital model corresponds to a real piece? How do you manage reproduction rights without a gallery or institution?</p>
+            <p><strong>The solution:</strong> On-chain verification using Base (Ethereum L2) and Merkle trees.</p>
+            <p>Each piece gets minted as an NFT containing metadata, hero photograph, and web-resolution 3D model—all stored on IPFS for permanent, decentralized access.</p>
+            <p><strong>What the NFT proves:</strong></p>
+            <ul>
+              <li>This piece exists</li>
+              <li>It was created by me</li>
+              <li>The digital model corresponds to the physical object</li>
+              <li>Ownership is traceable</li>
+              <li>Reproduction rights are defined and transferable</li>
+            </ul>
+            <p><strong>Merkle tree structure</strong> allows verification of individual pieces against the full catalog without exposing the entire dataset. You can prove a piece belongs to the Mad Branch collection without querying every record.</p>
+            <p><strong>Licensing tiers:</strong></p>
+            <ul>
+              <li><strong>View:</strong> Web model, photos (free)</li>
+              <li><strong>Own:</strong> Physical piece + NFT + web model</li>
+              <li><strong>License:</strong> High-res GLB (8K) + STL for reproduction + rights agreement</li>
+            </ul>
+            <p>The NFT isn't the product. The NFT is the verification infrastructure that makes the product trustworthy.</p>
+
+            <h3>5. Production System</h3>
+            <p>The craft produces objects. The production system turns objects into a sustainable practice:</p>
+            <p><strong>Content infrastructure:</strong></p>
+            <ul>
+              <li>Component-based website (Vue.js, Gridsome)</li>
+              <li>Shared codebase via NPM package (Parsimony Design System)</li>
+              <li>Content modeled in Contentful, extracted via GraphQL</li>
+              <li>Design system in Figma mirroring code components</li>
+              <li>Scroll-based homepage with diptych presentation</li>
+            </ul>
+            <p><strong>Documentation infrastructure:</strong></p>
+            <ul>
+              <li>DIY photo studio for product photography</li>
+              <li>KIRI Engine for 3D scanning</li>
+              <li>Consistent visual language across all assets</li>
+              <li>GLB optimization pipeline (gltf-transform for downsampling)</li>
+            </ul>
+            <p><strong>Distribution infrastructure:</strong></p>
+            <ul>
+              <li>IPFS for permanent, decentralized file storage</li>
+              <li>Base blockchain for verification and ownership</li>
+              <li>Email marketing (Mailchimp)</li>
+              <li>Community (Discord, Mastodon)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>What This Enables</h2>
+            <p>The old model of craft: Make things. Hope someone notices. Give them away to friends. Feel weird about charging money. No way to prove authenticity. No infrastructure for reproduction rights.</p>
+            <p>The new model: <strong>A system that verifies, distributes, and sustains.</strong></p>
+            <ul>
+              <li>Every piece is documented as it's created</li>
+              <li>Documentation feeds the digital twin pipeline</li>
+              <li>Digital twins get verified on-chain</li>
+              <li>Verification creates trust</li>
+              <li>Trust enables sales and licensing</li>
+              <li>Sales fund continued practice</li>
+            </ul>
+            <p>The bowls are the output. The verification system is what makes the output trustworthy at scale.</p>
+          </section>
+
+          <section>
+            <h2>Why This Belongs Here</h2>
+            <p>Mad Branch looks like a hobby. It's actually a proof of concept for three ideas:</p>
+            <p><strong>1. Systems thinking applies to everything.</strong> The same discipline I use for client work—content architecture, component libraries, publishing infrastructure—applies to artisan practice. The NPM package, the Contentful model, the Figma-to-code workflow. It's all the same system design, just applied to bowls.</p>
+            <p><strong>2. Verification is a design problem.</strong> In an era of fakes and AI slop, proving something is real becomes a core product feature. Mad Branch is my laboratory for designing verification infrastructure—on-chain provenance, Merkle trees, tiered licensing. These patterns will matter beyond craft.</p>
+            <p><strong>3. Physical and digital are one practice.</strong> The diptych isn't a gimmick. It's a thesis: every physical object can have a verified digital twin, and the pairing creates value neither has alone. Hold one, download one. Both are real. Both are verified. Both are Mad Branch.</p>
+          </section>
+
+          <section>
+            <h2>The Difference</h2>
+            <p>A conventional portfolio would hide this project—or frame it as a charming aside. This case study treats it as evidence: that systems thinking isn't a job skill, it's a worldview. That verification infrastructure is a design problem. That the same discipline applies whether you're designing content architecture for a Fortune 500 company or a provenance system for handmade bowls.</p>
+            <p><strong>I didn't start a woodworking hobby. I designed a system for verified artisan practice.</strong></p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Strangelund is James DiStefano · Atlanta, GA · <a href="mailto:strangelund.studio@gmail.com">strangelund.studio@gmail.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

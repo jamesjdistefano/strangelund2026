@@ -219,8 +219,13 @@ a:focus-visible {
    ========================================================================== */
 
 .site-header {
-  padding-block: var(--space-xl) var(--space-lg);
+  padding-block: var(--space-2xl) var(--space-xl);
   border-bottom: 1px solid var(--color-border);
+  background-image: url('/images/vector_forest_light_blue_4096x2304.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 50vh;
 }
 
 .site-header__inner {
@@ -242,7 +247,7 @@ a:focus-visible {
 
 .site-title:hover {
   text-decoration: none;
-  color: var(--color-accent);
+  color: #4de8ff;
 }
 
 .site-tagline {
@@ -264,7 +269,7 @@ a:focus-visible {
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  color: var(--color-text);
+  color: #4de8ff;
 }
 
 /* ==========================================================================
@@ -332,8 +337,10 @@ a:focus-visible {
 }
 
 .case-study-card__summary em {
+  display: block;
   font-weight: 400;
   color: #a0a0a0;
+  margin-top: var(--space-xs);
 }
 
 /* ==========================================================================

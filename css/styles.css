@@ -659,7 +659,7 @@ a:focus-visible {
   position: absolute;
   inset: 0;
   background-color: var(--color-bg);
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
 .case-study-header--mad-branch .case-study-header__inner {

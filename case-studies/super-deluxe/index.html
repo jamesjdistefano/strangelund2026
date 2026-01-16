@@ -13,6 +13,64 @@
   <meta property="og:locale" content="en_US">
 
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://strangelund.com/#website",
+        "name": "Strangelund",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://strangelund.com/case-studies/super-deluxe/#article",
+        "headline": "Super Deluxe",
+        "description": "I didn't fill a programming gap. I designed a system for incubating culture at scale.",
+        "url": "https://strangelund.com/case-studies/super-deluxe/",
+        "isPartOf": { "@id": "https://strangelund.com/#website" },
+        "author": { "@id": "https://strangelund.com/#person" },
+        "about": { "@id": "https://strangelund.com/case-studies/super-deluxe/#organization" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://strangelund.com/#person",
+        "name": "James DiStefano",
+        "jobTitle": "Principal, Systems and Experience Design",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://strangelund.com/case-studies/super-deluxe/#organization",
+        "name": "Super Deluxe",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Turner Broadcasting System"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strangelund",
+            "item": "https://strangelund.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Super Deluxe",
+            "item": "https://strangelund.com/case-studies/super-deluxe/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

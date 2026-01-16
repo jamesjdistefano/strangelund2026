@@ -13,6 +13,72 @@
   <meta property="og:locale" content="en_US">
 
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://strangelund.com/#website",
+        "name": "Strangelund",
+        "description": "I design systems that make experiences possible. Not screens—the infrastructure underneath.",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://strangelund.com/about/#webpage",
+        "name": "About | Strangelund",
+        "description": "I design systems that make experiences possible. Not screens—the logic underneath.",
+        "url": "https://strangelund.com/about/",
+        "isPartOf": { "@id": "https://strangelund.com/#website" },
+        "mainEntity": { "@id": "https://strangelund.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://strangelund.com/#person",
+        "name": "James DiStefano",
+        "alternateName": "Jim DiStefano",
+        "jobTitle": "Principal, Systems and Experience Design",
+        "description": "I design systems that make experiences possible. Content architectures, intelligence layers, probability models—the logic underneath, not the screens on top.",
+        "email": "strangelund.studio@gmail.com",
+        "url": "https://strangelund.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Atlanta",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        "knowsAbout": [
+          "Systems Design",
+          "Content Architecture",
+          "Information Architecture",
+          "Publishing Infrastructure",
+          "Strategic Design",
+          "Product Design"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strangelund",
+            "item": "https://strangelund.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://strangelund.com/about/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

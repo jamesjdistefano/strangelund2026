@@ -13,6 +13,151 @@
   <meta property="og:locale" content="en_US">
 
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://strangelund.com/#website",
+        "name": "Strangelund",
+        "alternateName": "A grove of unfamiliar trees",
+        "description": "Portfolio of James DiStefano, Principal, Systems and Experience Design",
+        "url": "https://strangelund.com",
+        "author": { "@id": "https://strangelund.com/#person" }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://strangelund.com/#webpage",
+        "name": "Strangelund | James DiStefano — Systems Designer",
+        "description": "I design systems that make experiences possible. Not screens—the infrastructure underneath.",
+        "url": "https://strangelund.com",
+        "isPartOf": { "@id": "https://strangelund.com/#website" },
+        "mainEntity": { "@id": "https://strangelund.com/#casestudies" },
+        "about": { "@id": "https://strangelund.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://strangelund.com/#person",
+        "name": "James DiStefano",
+        "alternateName": "Jim DiStefano",
+        "jobTitle": "Principal, Systems and Experience Design",
+        "description": "I design systems that make experiences possible. Content architectures, intelligence layers, probability models—the logic underneath, not the screens on top.",
+        "email": "strangelund.studio@gmail.com",
+        "url": "https://strangelund.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Atlanta",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        "knowsAbout": [
+          "Systems Design",
+          "Experience Design",
+          "Content Architecture",
+          "Information Architecture",
+          "Publishing Infrastructure",
+          "Strategic Design",
+          "Product Design"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://strangelund.com/#casestudies",
+        "name": "Case Studies",
+        "numberOfItems": 9,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Drip",
+            "description": "I didn't design a dashboard. I designed a system that tells you where to intervene.",
+            "url": "https://strangelund.com/case-studies/drip/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Southern Company Gas",
+            "description": "I didn't design five websites. I designed a system that produces websites.",
+            "url": "https://strangelund.com/case-studies/southern-company-gas/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mad Branch Studio",
+            "description": "I didn't start a woodworking hobby. I designed a system for verified artisan practice.",
+            "url": "https://strangelund.com/case-studies/mad-branch/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Grammarly",
+            "description": "I didn't design an email feature. I designed a system that turns email into a knowledge graph.",
+            "url": "https://strangelund.com/case-studies/grammarly/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Mailchimp",
+            "description": "I didn't build a content library. I designed a system for manufacturing marketing competence.",
+            "url": "https://strangelund.com/case-studies/mailchimp/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Stash Wealth",
+            "description": "I didn't add technology to a financial services firm. I designed a system that lets humans scale.",
+            "url": "https://strangelund.com/case-studies/stash-wealth/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Boston.gov",
+            "description": "I didn't redesign a government website. I designed a system that makes bureaucracy invisible.",
+            "url": "https://strangelund.com/case-studies/boston-gov/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Super Deluxe",
+            "description": "I didn't fill a programming gap. I designed a system for incubating culture at scale.",
+            "url": "https://strangelund.com/case-studies/super-deluxe/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Rock and Roll Hall of Fame",
+            "description": "I didn't redesign a website. I designed a system for exercising authority at scale.",
+            "url": "https://strangelund.com/case-studies/rock-hall/"
+          }
+        ]
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "hasPart": [
+          {
+            "@type": "WebPage",
+            "name": "About",
+            "url": "https://strangelund.com/about/"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Case Studies",
+            "url": "https://strangelund.com/#case-studies"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Contact",
+            "url": "https://strangelund.com/contact/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

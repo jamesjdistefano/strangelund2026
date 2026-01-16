@@ -13,6 +13,61 @@
   <meta property="og:locale" content="en_US">
 
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://strangelund.com/#website",
+        "name": "Strangelund",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://strangelund.com/case-studies/mailchimp/#article",
+        "headline": "Mailchimp",
+        "description": "I didn't build a content library. I designed a system for manufacturing marketing competence.",
+        "url": "https://strangelund.com/case-studies/mailchimp/",
+        "isPartOf": { "@id": "https://strangelund.com/#website" },
+        "author": { "@id": "https://strangelund.com/#person" },
+        "about": { "@id": "https://strangelund.com/case-studies/mailchimp/#organization" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://strangelund.com/#person",
+        "name": "James DiStefano",
+        "jobTitle": "Principal, Systems and Experience Design",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://strangelund.com/case-studies/mailchimp/#organization",
+        "name": "Mailchimp",
+        "url": "https://www.mailchimp.com"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strangelund",
+            "item": "https://strangelund.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mailchimp",
+            "item": "https://strangelund.com/case-studies/mailchimp/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

@@ -741,6 +741,13 @@ a:focus-visible {
   color: var(--color-text-muted);
 }
 
+.article-content .callout {
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-md);
+  margin-block: var(--space-xl);
+  font-size: var(--text-lg);
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */

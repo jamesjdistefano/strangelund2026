@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Current Work | Strangelund</title>
+  <meta name="description" content="I didn't gamify a product. I designed an intelligence layer that turns live data into triggers and inputs.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Current Work | Strangelund">
+  <meta property="og:description" content="I didn't gamify a product. I designed an intelligence layer that turns live data into triggers and inputs.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://strangelund.com/#website",
+        "name": "Strangelund",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://strangelund.com/case-studies/current-work/#article",
+        "headline": "My Current Work",
+        "description": "I didn't gamify a product. I designed an intelligence layer that turns live data into triggers and inputs.",
+        "url": "https://strangelund.com/case-studies/current-work/",
+        "isPartOf": { "@id": "https://strangelund.com/#website" },
+        "author": { "@id": "https://strangelund.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://strangelund.com/#person",
+        "name": "James DiStefano",
+        "jobTitle": "Principal, Systems and Experience Design",
+        "url": "https://strangelund.com"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strangelund",
+            "item": "https://strangelund.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "My Current Work",
+            "item": "https://strangelund.com/case-studies/current-work/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="case-study-header case-study-header--current-work">
+    <div class="container case-study-header__inner">
+      <h1 class="case-study-header__title">My Current Work</h1>
+      <p class="case-study-header__lede">I didn't gamify a product.</p>
+      <p class="case-study-header__sub">I designed an intelligence layer that turns live data into triggers and inputs.</p>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Strangelund</a><span>›</span>My Current Work
+  </nav>
+
+  <main class="main" id="main-content">
+    <div class="container">
+      <article class="article">
+        <div class="article-content">
+          <section>
+            <h2>The Problem</h2>
+            <p>Most product teams treat games and content as separate functions. Games are engagement features—points, badges, leaderboards bolted onto existing experiences. Content is editorial—planned, scheduled, published on a calendar.</p>
+            <p>Both approaches miss something: the moments that actually matter aren't on anyone's calendar. They emerge from data. And when they emerge, they create windows for participation and narrative that don't exist five minutes earlier or later.</p>
+            <p class="callout"><strong>The question:</strong> What if you designed a system where data itself determines when games become meaningful and when content becomes urgent?</p>
+          </section>
+
+          <section>
+            <h2>The System</h2>
+            <p>I can't name the company or describe the domain. Here's what I can tell you about the architecture.</p>
+
+            <h3>The Intelligence Layer</h3>
+            <p>Working with data science, I designed a system that watches live data and calculates states—not just what's happening, but what's <em>likely</em> to happen. These probability states become the foundation for everything above.</p>
+
+            <h3>The Game Layer</h3>
+            <p>Games built on this layer aren't decorative. Scoring and leaderboards tie directly to probability states. When the underlying model shifts, the game shifts. Participation becomes meaningful because it's coupled to something real.</p>
+
+            <h3>The Content Layer</h3>
+            <p>Probability drops become editorial triggers. When the model detects a significant shift, that's not just a game event—it's a content moment. The surrounding data becomes input for what gets created.</p>
+            <p>One intelligence layer. Two experience systems. Each feeding on the same underlying reality.</p>
+          </section>
+
+          <section>
+            <h2>What This Enables</h2>
+            <p>The old model: Games are engagement theater. Content is scheduled. Neither responds to what's actually happening.</p>
+            <p>The new model: <strong>The system watches. When something significant happens, games and content activate together.</strong> Participation and narrative emerge from the same trigger, at the same moment, for the same reason.</p>
+            <p>This is what I mean by designing systems, not features. The games didn't exist before I proposed them. The content engine didn't exist. The intelligence layer that powers both didn't exist. I brought the architecture; now it's becoming central to the product.</p>
+          </section>
+
+          <section>
+            <h2>The Difference</h2>
+            <p>A conventional case study would show you the screens—the leaderboard UI, the content templates. This case study can't show you anything. NDA.</p>
+            <p>But what I can tell you is what the work required: collaborating with data science to design the probability model, thinking through game mechanics that couple to live states, designing a content system that treats data shifts as editorial triggers.</p>
+            <p class="callout"><strong>I didn't gamify a product. I designed an intelligence layer that turns live data into triggers and inputs.</strong></p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Strangelund is James DiStefano · Atlanta, GA · <a href="mailto:strangelund.studio@gmail.com">strangelund.studio@gmail.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

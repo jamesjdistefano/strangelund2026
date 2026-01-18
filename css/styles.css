@@ -725,6 +725,54 @@ a:focus-visible {
   justify-content: center;
 }
 
+.case-study-header--about {
+  background-image: url('/images/about-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.6;
+}
+
+.case-study-header--about .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.case-study-header--contact {
+  background-image: url('/images/contact-header.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+}
+
+.case-study-header--contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.5;
+}
+
+.case-study-header--contact .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
 .case-study-header__sub {
   font-size: var(--text-lg);
   color: var(--color-text);
@@ -823,6 +871,128 @@ a:focus-visible {
   padding-left: var(--space-md);
   margin-block: var(--space-xl);
   font-size: var(--text-lg);
+}
+
+/* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+.contact-page {
+  max-width: 640px;
+  margin-inline: auto;
+  padding-block: var(--space-2xl);
+}
+
+.contact-page__statement {
+  margin-bottom: var(--space-2xl);
+}
+
+.contact-page__headline {
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.contact-page__headline--primary {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-page__headline--secondary {
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+  color: var(--color-text-muted);
+}
+
+.contact-page__headline--secondary:first-of-type {
+  margin-bottom: var(--space-xs);
+}
+
+.contact-page__criteria {
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-lg);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.contact-page__criteria h2 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.contact-page__criteria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-page__criteria li {
+  position: relative;
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+  font-size: var(--text-base);
+}
+
+.contact-page__criteria li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+.contact-page__criteria li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-page__action {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-page__invite {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.contact-page__email {
+  display: inline-block;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.contact-page__email:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.contact-page__location {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.contact-page__location p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* ==========================================================================

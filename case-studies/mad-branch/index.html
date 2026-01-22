@@ -109,14 +109,18 @@
             <p>Craft exists in opposition to system. Or so the story goes.</p>
             <p>The maker works with their hands, responds to material, follows intuition. The technologist builds repeatable processes, scales output, optimizes efficiency. These are supposed to be different worlds.</p>
             <p>But that framing is wrong. Every serious craftsperson operates within systems—they just don't always name them. Grain direction, wall thickness ratios, tool geometry, finishing chemistry. These are constraints that shape possibility. The artisan who ignores them makes bad work. The artisan who masters them makes work that looks like intuition but is actually informed response within a defined system.</p>
-            <p class="callout">Mad Branch is my laboratory for this idea: <strong>What happens when you design the system around the craft—including the system that verifies the craft is real?</strong></p>
+            <p class="callout"><a href="https://madbranch.studio">Mad Branch</a> is my laboratory for this idea: <strong>What happens when you design the system around the craft—including the system that verifies the craft is real?</strong></p>
+            <figure>
+              <img src="/images/portfolio/mad-branch/lg-reclaim.jpg" alt="Reclamation Is A Kind of Faith - Box Elder sculpture">
+              <figcaption><a href="https://madbranch.studio/work">"Reclamation Is A Kind of Faith."</a> Box Elder. The material's characteristics—spalting, figure, defects—suggested the form. Constraint recognition, not mysticism.</figcaption>
+            </figure>
           </section>
 
           <section>
             <h2>The Vision</h2>
             <p><strong>Physical Objects. Digital Models. Verified physical. Verified digital. Hold one. Download one.</strong></p>
             <p>Every piece exists twice: as a physical object you can hold, and as a high-fidelity 3D scan you can download, rotate, examine. The physical and digital aren't separate products—they're a diptych. Two expressions of the same work, authenticated together.</p>
-            <p>In a world of AI-generated images and manufactured fakes, verification matters. Who made this? When? Is this the real thing? Mad Branch answers those questions with infrastructure, not trust.</p>
+            <p>Mad Branch is a physical and digital art installation exploring authenticity in the digital age. In a world of AI-generated images and manufactured provenance, verification matters. Who made this? When? Is this the real thing? Mad Branch answers those questions with infrastructure, not trust.</p>
           </section>
 
           <section>
@@ -144,6 +148,10 @@
               <li><strong>Finish protocols</strong> matched to intended use</li>
             </ul>
             <p>This is a system. It's repeatable. It produces consistent quality. And within it, there's infinite room for variation—because the constraints create the space for meaningful choices.</p>
+            <figure>
+              <img src="/images/portfolio/mad-branch/lg-foundation.jpg" alt="And The Foundation Held - Eastern Red Cedar sculpture">
+              <figcaption><a href="https://madbranch.studio/work">"And The Foundation Held."</a> Eastern Red Cedar. One continuous curve, mirrored inside and out. The craft system made visible.</figcaption>
+            </figure>
 
             <h3>3. Digital Twin System</h3>
             <p>Every finished piece gets scanned with LIDAR (KIRI Engine on iPhone) to produce a high-fidelity 3D model.</p>
@@ -153,39 +161,33 @@
               <li><strong>Production:</strong> 8K textures, 20-50MB — for licensed reproduction via 3D printing, CNC, or casting</li>
             </ul>
             <p>The web version loads fast and looks great on screen. The production version preserves every detail for potential reproduction.</p>
-            <p>The scroll-based homepage lets visitors explore pieces by scrolling—the model rotates, the diptych reveals itself: physical photograph on one side, digital model on the other.</p>
+            <p>The <a href="https://madbranch.studio">scroll-based homepage</a> lets visitors explore pieces by scrolling—the model rotates, the diptych reveals itself: physical photograph on one side, digital model on the other.</p>
 
             <h3>4. Verification System</h3>
             <p>This is where Mad Branch becomes a systems project, not just a craft project.</p>
-            <p><strong>The problem:</strong> How do you prove a physical object is authentic? How do you prove a digital model corresponds to a real piece? How do you manage reproduction rights without a gallery or institution?</p>
-            <p><strong>The solution:</strong> On-chain verification using Base (Ethereum L2) and Merkle trees.</p>
-            <p>Each piece gets minted as an NFT containing metadata, hero photograph, and web-resolution 3D model—all stored on IPFS for permanent, decentralized access.</p>
-            <p><strong>What the NFT proves:</strong></p>
+            <p><strong>The problem:</strong> How do you prove a physical object is authentic? How do you prove a digital model corresponds to a real piece? In an era of AI-generated images and manufactured provenance, how do you answer "Is this real?" with infrastructure rather than trust?</p>
+            <p><strong>The solution:</strong> Cryptographic verification anchored to the blockchain.</p>
+            <p>Every file on the site—photographs, 3D models, metadata—is hashed using SHA-256. These hashes combine into a Merkle tree. The root hash gets periodically anchored to Base (Ethereum L2), creating an immutable timestamp of the archive's state.</p>
+            <p><strong>What this enables:</strong></p>
             <ul>
-              <li>This piece exists</li>
-              <li>It was created by me</li>
-              <li>The digital model corresponds to the physical object</li>
-              <li>Ownership is traceable</li>
-              <li>Reproduction rights are defined and transferable</li>
+              <li>Anyone can verify a file's authenticity by uploading it—the system compares computed hashes against the authenticated archive</li>
+              <li>The Merkle tree structure allows verification of individual files without exposing the entire dataset</li>
+              <li>Blockchain anchoring creates a permanent, tamper-proof record of what existed when</li>
+              <li>No gallery, no institution, no certificate of authenticity—just cryptographic proof</li>
             </ul>
-            <p><strong>Merkle tree structure</strong> allows verification of individual pieces against the full catalog without exposing the entire dataset. You can prove a piece belongs to the Mad Branch collection without querying every record.</p>
-            <p><strong>Licensing tiers:</strong></p>
-            <ul>
-              <li><strong>View:</strong> Web model, photos (free)</li>
-              <li><strong>Own:</strong> Physical piece + NFT + web model</li>
-              <li><strong>License:</strong> High-res GLB (8K) + STL for reproduction + rights agreement</li>
-            </ul>
-            <p>The NFT isn't the product. The NFT is the verification infrastructure that makes the product trustworthy.</p>
+            <p><strong>AI crawler tracking:</strong> The <a href="https://madbranch.studio/verify">verification page</a> monitors bot activity—GPTBot, ClaudeBot, and other AI training crawlers. When they harvest content, it's logged: file paths, timestamps, sources. The system documents its own consumption by the machines.</p>
+            <p><strong><a href="https://madbranch.studio/license/">License for Machines</a>:</strong> The tracking isn't just documentation—it's infrastructure for a proposed compensation model. Every photograph, 3D model, page of text, and code file has a price. The premise: build the opt-in marketplace before regulatory pressure forces it. A door, not a wall. Companies need training data; creators could be partners rather than unwilling sources.</p>
+            <p>The verification infrastructure isn't the product. It's what makes the product trustworthy—and potentially compensable—in an age where trust itself has been automated away.</p>
 
             <h3>5. Production System</h3>
             <p>The craft produces objects. The production system turns objects into a sustainable practice:</p>
             <p><strong>Content infrastructure:</strong></p>
             <ul>
-              <li>Component-based website (Vue.js, Gridsome)</li>
-              <li>Shared codebase via NPM package (Parsimony Design System)</li>
-              <li>Content modeled in Contentful, extracted via GraphQL</li>
-              <li>Design system in Figma mirroring code components</li>
               <li>Scroll-based homepage with diptych presentation</li>
+              <li>Single-piece page with detail and purchase options</li>
+              <li>Metadata authored into site images and 3d models for verification and licensing</li>
+              <li>Verification process periodically hashes and anchors site </li>
+              <li>Dynamic site visit logging provides receipts of AI harvesting</li>
             </ul>
             <p><strong>Documentation infrastructure:</strong></p>
             <ul>
@@ -196,11 +198,15 @@
             </ul>
             <p><strong>Distribution infrastructure:</strong></p>
             <ul>
-              <li>IPFS for permanent, decentralized file storage</li>
               <li>Base blockchain for verification and ownership</li>
-              <li>Email marketing (Mailchimp)</li>
               <li>Community (Discord, Mastodon)</li>
+              <li>Site authoring emphasizes content/meta for SEO, AEO, and Accessibility</li>
+              <li>All pages emphasize OpenGraph for shareability</li>
             </ul>
+            <figure>
+              <img src="/images/portfolio/mad-branch/verify-screenshot.png" alt="Mad Branch verification page showing file hash verification, blockchain anchoring status, and AI crawler tracking">
+              <figcaption>The <a href="https://madbranch.studio/verify">verification page</a>. Drop a file to verify its authenticity against the blockchain-anchored archive. The page also logs AI crawler activity—documenting when machines harvest the work.</figcaption>
+            </figure>
           </section>
 
           <section>
@@ -216,13 +222,21 @@
               <li>Sales fund continued practice</li>
             </ul>
             <p>The bowls are the output. The verification system is what makes the output trustworthy at scale.</p>
+            <figure>
+              <img src="/images/portfolio/mad-branch/lg-order.jpg" alt="Order Only Invites Refusal - Dogwood and Alabaster sculpture">
+              <figcaption><a href="https://madbranch.studio/work">"Order Only Invites Refusal."</a> Dogwood, Alabaster. From salvaged material to finished piece to digital twin to on-chain verification. The full system at work.</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/portfolio/mad-branch/lg-neither-prey.jpg" alt="Neither Prey Nor Fledge - Birdseye Maple sculpture">
+              <figcaption><a href="https://madbranch.studio/work">"Neither Prey Nor Fledge."</a> Birdseye Maple. Physical object and digital model, verified together. Hold one. Download one.</figcaption>
+            </figure>
           </section>
 
           <section>
             <h2>Why This Belongs Here</h2>
             <p>Mad Branch looks like a hobby. It's actually a proof of concept for three ideas:</p>
             <p><strong>1. Systems thinking applies to everything.</strong> The same discipline I use for client work—content architecture, component libraries, publishing infrastructure—applies to artisan practice. The NPM package, the Contentful model, the Figma-to-code workflow. It's all the same system design, just applied to bowls.</p>
-            <p><strong>2. Verification is a design problem.</strong> In an era of fakes and AI slop, proving something is real becomes a core product feature. Mad Branch is my laboratory for designing verification infrastructure—on-chain provenance, Merkle trees, tiered licensing. These patterns will matter beyond craft.</p>
+            <p><strong>2. Verification is a design problem.</strong> In an era of fakes and AI slop, proving something is real becomes a core product feature. Mad Branch is my laboratory for designing verification infrastructure—cryptographic hashing, Merkle trees, blockchain anchoring. The system even documents when AI crawlers harvest its content. These patterns will matter beyond craft.</p>
             <p><strong>3. Physical and digital are one practice.</strong> The diptych isn't a gimmick. It's a thesis: every physical object can have a verified digital twin, and the pairing creates value neither has alone. Hold one, download one. Both are real. Both are verified. Both are Mad Branch.</p>
           </section>
 

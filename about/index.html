@@ -6,11 +6,24 @@
   <title>About | Strangelund</title>
   <meta name="description" content="I design systems that make experiences possible. Not screens—the logic underneath.">
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://strangelund.com/about/">
+
   <!-- Open Graph -->
   <meta property="og:title" content="About | Strangelund">
   <meta property="og:description" content="I design systems that make experiences possible. Not screens—the logic underneath.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://strangelund.com/about/">
+  <meta property="og:image" content="https://strangelund.com/images/og-about.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About | Strangelund">
+  <meta name="twitter:description" content="I design systems that make experiences possible. Not screens—the logic underneath.">
+  <meta name="twitter:image" content="https://strangelund.com/images/og-about.png">
 
   <link rel="stylesheet" href="/css/styles.css">
 
@@ -75,12 +88,42 @@
             "item": "https://strangelund.com/about/"
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does James DiStefano do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I design systems that make experiences possible. Content architectures that let one source publish everywhere. Intelligence layers that turn data into decisions. Probability models that know which moments matter. The logic underneath—not the screens on top."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of work is James DiStefano looking for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Green field problems with no obvious solution. Appetite for risk. Aversion to parity. Organizations that want to produce something different, not catch up to competitors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does James DiStefano not do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chase parity. Limit contribution to screens, flows, and incremental UI changes. Craft the obvious and safe solution."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="case-study-header case-study-header--about">
     <div class="container case-study-header__inner">
@@ -89,7 +132,10 @@
   </header>
 
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="/">Strangelund</a><span>›</span>About
+    <ol>
+      <li><a href="/">Strangelund</a></li>
+      <li aria-current="page">About</li>
+    </ol>
   </nav>
 
   <main class="main" id="main-content">

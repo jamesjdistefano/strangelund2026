@@ -884,6 +884,12 @@ a:focus-visible {
   font-size: var(--text-lg);
 }
 
+.article-content .footnote {
+  font-size: 0.4375rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-lg);
+}
+
 /* ==========================================================================
    Figures & Images
    ========================================================================== */

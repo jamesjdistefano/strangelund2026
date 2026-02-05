@@ -333,7 +333,19 @@ a:focus-visible {
   margin-inline: auto;
   margin-bottom: var(--space-2xl);
   padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid rgba(77, 232, 255, 0.3);
+  position: relative;
+}
+
+.thesis::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: var(--max-width-wide);
+  height: 1px;
+  background-color: rgba(77, 232, 255, 0.3);
 }
 
 .thesis p {

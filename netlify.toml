@@ -1,6 +1,5 @@
 [build]
-  publish = "/"
-  command = ""
+  publish = "."
 
 # Redirects for clean URLs (optional - directory-based routing handles most)
 [[redirects]]

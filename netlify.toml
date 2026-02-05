@@ -1,6 +1,22 @@
 [build]
   publish = "."
 
+# Headers for proper UTF-8 encoding
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Content-Type = "text/html; charset=UTF-8"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=UTF-8"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=UTF-8"
+
 # Redirects for clean URLs (optional - directory-based routing handles most)
 [[redirects]]
   from = "/*"

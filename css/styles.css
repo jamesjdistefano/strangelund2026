@@ -1153,6 +1153,11 @@ a:focus-visible {
   color: var(--color-text);
 }
 
+.site-footer__social {
+  margin-top: var(--space-xs);
+  font-size: var(--text-xs);
+}
+
 /* ==========================================================================
    Utilities
    ========================================================================== */

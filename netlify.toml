@@ -1,6 +1,12 @@
 [build]
   publish = "."
 
+# Allow social media crawlers and OG fetchers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "all"
+
 # Headers for proper UTF-8 encoding
 [[headers]]
   for = "/*.html"

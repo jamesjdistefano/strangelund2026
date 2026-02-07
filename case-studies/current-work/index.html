@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Current Work | Strangelund</title>
-  <meta name="description" content="I didn't add features to a data product. I designed a system that turns volatile data into durable intelligence.">
+  <meta name="description" content="Not a case study—a thesis. Most companies display their data instead of designing the intelligence layer that compounds it.">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://strangelund.com/case-studies/current-work/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="My Current Work | Strangelund">
-  <meta property="og:description" content="I didn't add features to a data product. I designed a system that turns volatile data into durable intelligence.">
+  <meta property="og:description" content="Not a case study—a thesis. Most companies display their data instead of designing the intelligence layer that compounds it.">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://strangelund.com/case-studies/current-work/">
@@ -22,7 +22,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="My Current Work | Strangelund">
-  <meta name="twitter:description" content="I didn't add features to a data product. I designed a system that turns volatile data into durable intelligence.">
+  <meta name="twitter:description" content="Not a case study—a thesis. Most companies display their data instead of designing the intelligence layer that compounds it.">
   <meta name="twitter:image" content="https://strangelund.com/images/og-current-work-2.png">
 
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -44,7 +44,7 @@
         "@type": "Article",
         "@id": "https://strangelund.com/case-studies/current-work/#article",
         "headline": "My Current Work",
-        "description": "I didn't add features to a data product. I designed a system that turns volatile data into durable intelligence.",
+        "description": "Not a case study—a thesis. Most companies display their data instead of designing the intelligence layer that compounds it.",
         "url": "https://strangelund.com/case-studies/current-work/",
         "isPartOf": { "@id": "https://strangelund.com/#website" },
         "author": { "@id": "https://strangelund.com/#person" }
@@ -83,8 +83,8 @@
   <header class="case-study-header case-study-header--current-work">
     <div class="container case-study-header__inner">
       <h1 class="case-study-header__title">My Current Work</h1>
-      <p class="case-study-header__lede">I didn't add features to a data product.</p>
-      <p class="case-study-header__sub">I designed a system that turns volatile data into durable intelligence.</p>
+      <p class="case-study-header__lede">I'm under NDA. So this isn't a case study.</p>
+      <p class="case-study-header__sub">It's a thesis about the design problem nobody owns.</p>
     </div>
   </header>
 
@@ -100,50 +100,41 @@
       <article class="article">
         <div class="article-content">
           <section>
-            <h2>The Problem</h2>
+            <h2>The Pattern</h2>
             <p>Most companies treat real-time data as a display problem.</p>
-            <p>Charts. Feeds. Notifications. The data streams through. Nothing accumulates. Nothing compounds. You have a firehose pointed at a screen.</p>
-            <p>The harder problem: how do you turn volatile data into durable intelligence? How do you make a system that doesn't just <em>react</em> to what's happening, but <em>understands</em> it well enough to trigger games, generate narratives, drive participation?</p>
-            <p class="callout"><strong>That's the system I'm building now.</strong></p>
+            <p>Most dashboards tell you what happened. Past tense. A record of things you already missed. Few tell you <em>why</em> it happened. Almost none tell you what to do next. And none of them do it for you.</p>
+            <p>The harder problem—the one that keeps surfacing across every domain I work in: how do you turn volatile data into durable intelligence? Not better charts. Not more analytics. A system that understands what's happening well enough to act on it.</p>
+            <p class="callout"><strong>I'm currently working on problems in this space under a confidentiality agreement. I can't share the client, the domain, or the specifics. But the pattern is worth describing—because almost nobody builds for it.</strong></p>
           </section>
 
           <section>
-            <h2>The Shape</h2>
+            <h2>The Missing Layer</h2>
             <p>Think about Pandora. Their intellectual property isn't the music—it's the Music Genome Project: a system of definitions encoded as data. Those definitions feed algorithms that power recommendation and advertising. The music is the surface. The genome is the system.</p>
-            <p>What I've designed operates similarly. Raw, live data streams transform into mathematical models. Those models become an intelligence layer. That layer powers multiple experience systems—games, media, participation mechanics—all feeding on the same underlying reality.</p>
-            <p>One source of truth. Multiple expressions. Each reinforcing the others.</p>
+            <p>This pattern appears everywhere. Raw data streams that could be transformed into structured intelligence. That intelligence could power multiple experience layers—each feeding on the same underlying reality, each reinforcing the others.</p>
+            <p>One source of truth. Multiple expressions. The companies that build this own something defensible. The companies that don't are competing on surface.</p>
           </section>
 
           <section>
-            <h2>The Before/After</h2>
-            <p><strong>The old way:</strong> Real-time data powers a dashboard. Someone watches the dashboard. When something interesting happens, they decide what to do. Then they build it—a feature, a notification, a piece of content. By the time it ships, the moment has passed.</p>
-            <p>This is how most companies work. Data informs decisions. Decisions trigger projects. Projects ship eventually. The data is an input to human judgment, not a trigger for system behavior.</p>
-            <p><strong>The new way:</strong> The intelligence layer identifies meaningful states—thresholds, patterns, inflection points. When the data crosses a boundary, the system responds. A game mechanic activates. A narrative surfaces. A participation opportunity opens.</p>
-            <p>No one decides. No one builds. The system already knows what matters and what to do about it.</p>
-            <p>The difference isn't speed. It's architecture. One approach treats data as something to look at. The other treats data as something the system understands.</p>
+            <h2>Why Nobody Builds It</h2>
+            <p>It requires solving three problems at once, and they belong to different departments.</p>
+            <p><strong>The modeling problem:</strong> What states matter? Real-time data is noisy. Most of it is meaningless. An intelligence layer has to distinguish signal from noise—and that requires someone who understands both the data and the domain.</p>
+            <p><strong>The expression problem:</strong> How do you connect meaningful states to experiences people care about? A threshold crossing isn't inherently interesting. It becomes interesting when it activates something worth paying attention to. Designing those connections is systems design, not feature design.</p>
+            <p><strong>The coherence problem:</strong> How do multiple experiences feed on the same reality without contradicting each other? One source of truth, multiple expressions—but the expressions have to cohere. This is an architecture problem disguised as a content problem.</p>
+            <p>Most companies solve one of these. Few attempt all three. The ones that do tend to become the platform everyone else builds on.</p>
           </section>
 
           <section>
-            <h2>Why This Is Hard</h2>
-            <p>Building this requires solving three problems at once:</p>
-            <p><strong>The modeling problem:</strong> What states matter? Real-time data is noisy. Most of it is meaningless. The intelligence layer has to distinguish signal from noise—identifying the patterns that should trigger responses from the patterns that are just fluctuation.</p>
-            <p><strong>The trigger problem:</strong> How do you connect states to experiences? A threshold crossing isn't inherently meaningful. It becomes meaningful when it activates something—a game, a story, a reason to participate. Designing those connections is systems design, not feature design.</p>
-            <p><strong>The coherence problem:</strong> How do multiple experiences feed on the same reality without contradicting each other? If the game says one thing and the media says another, the whole system loses credibility. One source of truth, multiple expressions—but the expressions have to cohere.</p>
-            <p>Most companies solve one of these. Few solve all three. The ones that do have something defensible.</p>
-          </section>
-
-          <section>
-            <h2>Where This Goes</h2>
-            <p>The pattern isn't domain-specific. Any company sitting on real-time data faces the same choice: display it or understand it. The ones who build the intelligence layer own something defensible. The ones who don't are competing on dashboard polish.</p>
-            <p>This system is one implementation. The architecture is portable.</p>
-            <p>The intelligence layer I designed didn't exist before I proposed it. Now it's central to the product. The next version of this pattern will be central to someone else's.</p>
+            <h2>What I Can Say</h2>
+            <p>I can't share what I'm working on now. But the rest of this portfolio demonstrates how I think about exactly this class of problem.</p>
+            <p><a href="/case-studies/southern-company-gas/">Southern Company Gas</a> is a content architecture that produces five websites from one system. <a href="/case-studies/drip/">Drip</a> is a data system that tells you where to intervene. <a href="/case-studies/grammarly/">Grammarly</a> is a system that turns email into a knowledge graph. The pattern is the same. Data becomes structure. Structure becomes intelligence. Intelligence becomes experience.</p>
+            <p>When I can talk about the current work, I will.</p>
           </section>
 
           <section>
             <h2>The Difference</h2>
-            <p>What I can't tell you: the company, the domain, the specifics.</p>
-            <p>What I can tell you: if you're sitting on real-time data and treating it as a display problem instead of an intelligence problem, you're leaving the system unbuilt. The data streams through. Nothing compounds. The opportunity sits there, unrealized.</p>
-            <p class="callout"><strong>I designed the system that turns volatile data into compounding intelligence. If you have the data and don't have the system, let's talk.</strong></p>
+            <p>If you're sitting on real-time data and treating it as a display problem, you're leaving the system unbuilt. The data streams through. Nothing compounds. The opportunity sits there.</p>
+            <p>The intelligence layer is the hardest thing to design because it doesn't belong to any existing role. It's not engineering. It's not product. It's not data science. It's the system underneath all of them.</p>
+            <p class="callout"><strong>That's what I design. If you have the data and don't have the system, let's talk.</strong></p>
           </section>
 
           <aside class="contact-callout">

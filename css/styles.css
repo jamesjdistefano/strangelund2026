@@ -412,7 +412,12 @@ a:focus-visible {
   background-color: rgba(77, 232, 255, 0.9);
   padding: 0.2em 0.7em;
   border-radius: 999px;
-  margin-bottom: var(--space-xs);
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.case-study-card__label--pink {
+  background-color: rgba(255, 77, 166, 0.9);
 }
 
 .case-study-card__client {
@@ -426,6 +431,7 @@ a:focus-visible {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   line-height: var(--line-height);
+  margin-bottom: var(--space-sm);
 }
 
 .case-study-card__summary em {

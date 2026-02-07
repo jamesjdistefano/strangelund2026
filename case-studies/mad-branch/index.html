@@ -122,108 +122,74 @@
             <h2>The Vision</h2>
             <p><strong>Physical Objects. Digital Models. Verified physical. Verified digital. Hold one. Download one.</strong></p>
             <p>Every piece exists twice: as a physical object you can hold, and as a high-fidelity 3D scan you can download, rotate, examine. The physical and digital aren't separate products—they're a diptych. Two expressions of the same work, authenticated together.</p>
-            <p>Mad Branch is a physical and digital art installation exploring authenticity in the digital age. In a world of AI-generated images and manufactured provenance, verification matters. Who made this? When? Is this the real thing? Mad Branch answers those questions with infrastructure, not trust.</p>
+            <p>Mad Branch is a physical and digital art installation exploring authenticity in the digital age. In a world of AI-generated images and manufactured provenance, verification matters. Who made this? When? Is this the real thing?</p>
+            <p>I decided to answer those questions with infrastructure, not trust. And then I built everything.</p>
           </section>
 
           <section>
-            <h2>The System</h2>
-            <p>Mad Branch operates on five interconnected layers:</p>
+            <h2>What I Built</h2>
+            <p>Mad Branch isn't a portfolio piece with a few glamour shots and a paragraph about process. It's 11 pages, 134 provenance-tracked files, 6 blockchain anchors, 5 serverless functions, and a graph database—all designed, authored, and coded by one person.</p>
+            <p>Here's what that actually means.</p>
 
-            <h3>1. Material System</h3>
-            <p>Wood is not a blank canvas. It arrives with properties that constrain what's possible:</p>
-            <ul>
-              <li><strong>Grain direction</strong> determines cutting approach and structural integrity</li>
-              <li><strong>Moisture content</strong> dictates drying time and finishing options</li>
-              <li><strong>Defects</strong> (rot, knots, voids) suggest form rather than obstruct it</li>
-              <li><strong>Species characteristics</strong> (hardness, figure, workability) define tool selection and technique</li>
-            </ul>
-            <p>I don't fight the material. I designed a practice around reading it—identifying what the piece wants to become based on what it already is. This isn't mysticism. It's constraint recognition.</p>
-            <p>The system: Assess the blank. Identify the constraints. Let the constraints suggest the form.</p>
-
-            <h3>2. Craft System</h3>
+            <h3>The Craft Layer</h3>
             <p>Early work was complex—compound curves, live edges, decorative features. It was also bad.</p>
-            <p>Experienced turners taught me that quality lives in simplicity: one continuous curve, mirrored inside and out, at consistent wall thickness. The craft system I now use:</p>
-            <ul>
-              <li><strong>Proportion ratios</strong> (rim to height to foot) that produce pleasing forms</li>
-              <li><strong>Measurement checkpoints</strong> during turning, not just at the end</li>
-              <li><strong>Progressive refinement</strong> rather than additive complexity</li>
-              <li><strong>Finish protocols</strong> matched to intended use</li>
-            </ul>
-            <p>This is a system. It's repeatable. It produces consistent quality. And within it, there's infinite room for variation—because the constraints create the space for meaningful choices.</p>
+            <p>Experienced turners taught me that quality lives in simplicity: one continuous curve, mirrored inside and out, at consistent wall thickness. I built a practice around proportion ratios, measurement checkpoints during turning, progressive refinement rather than additive complexity. A system. Repeatable. Consistent. And within it, infinite room for variation—because the constraints create the space for meaningful choices.</p>
+            <p>Four finished pieces: Reclaim (Box Elder), Foundation (Eastern Red Cedar), Order (Dogwood and Alabaster), Neither Prey (Birdseye Maple). Each named. Each with a material story. Each scanned into a high-fidelity 3D model totaling 63.6 MB across six GLB files.</p>
             <figure>
               <img src="/images/portfolio/mad-branch/lg-foundation.jpg" alt="And The Foundation Held - Eastern Red Cedar sculpture">
               <figcaption><a href="https://madbranch.studio/work">"And The Foundation Held."</a> Eastern Red Cedar. One continuous curve, mirrored inside and out. The craft system made visible.</figcaption>
             </figure>
 
-            <h3>3. Digital Twin System</h3>
-            <p>Every finished piece gets scanned with LIDAR (KIRI Engine on iPhone) to produce a high-fidelity 3D model.</p>
-            <p><strong>Two versions for two purposes:</strong></p>
-            <ul>
-              <li><strong>Web display:</strong> 2K-4K textures, 2-5MB — for website, NFT, gallery</li>
-              <li><strong>Production:</strong> 8K textures, 20-50MB — for licensed reproduction via 3D printing, CNC, or casting</li>
-            </ul>
-            <p>The web version loads fast and looks great on screen. The production version preserves every detail for potential reproduction.</p>
-            <p>The <a href="https://madbranch.studio">scroll-based homepage</a> lets visitors explore pieces by scrolling—the model rotates, the diptych reveals itself: physical photograph on one side, digital model on the other.</p>
+            <h3>The Experience Layer</h3>
+            <p>I didn't build a gallery. I built interactive encounters with the work.</p>
+            <p>The <a href="https://madbranch.studio">homepage</a> is a scroll-driven diptych: photograph on the left, 3D model on the right, rotating 720 degrees over the full scroll length. A draggable divider separates them—horizontal drag resizes the panels, vertical drag controls a grayscale-to-wireframe transition. The physical becomes the digital as you move through it.</p>
+            <p>Each piece has its own page with OrbitControls—manual rotation, zoom, examination. The hidden navigation appears on hover or by pressing 'm'. Arrow keys move between pieces. Double-click resets the divider. These aren't features for features' sake. They're ways of spending time with the work.</p>
+            <p>Typography matters too. PP Right Grotesk for display, Roboto Condensed variable font for body text—chosen because the site needed to feel authored, not templated. Sixteen CSS custom properties define the entire color palette. Responsive breakpoints handle mobile. Every page has skip-to-content links, ARIA labels, semantic HTML5, keyboard navigation, focus indicators.</p>
 
-            <h3>4. Verification System</h3>
+            <h3>The Verification Layer</h3>
             <p>This is where Mad Branch becomes a systems project, not just a craft project.</p>
-            <p><strong>The problem:</strong> How do you prove a physical object is authentic? How do you prove a digital model corresponds to a real piece? In an era of AI-generated images and manufactured provenance, how do you answer "Is this real?" with infrastructure rather than trust?</p>
-            <p><strong>The solution:</strong> Cryptographic verification anchored to the blockchain.</p>
-            <p>Every file on the site—photographs, 3D models, metadata—is hashed using SHA-256. These hashes combine into a Merkle tree. The root hash gets periodically anchored to Base (Ethereum L2), creating an immutable timestamp of the archive's state.</p>
-            <p><strong>What this enables:</strong></p>
-            <ul>
-              <li>Anyone can verify a file's authenticity by uploading it—the system compares computed hashes against the authenticated archive</li>
-              <li>The Merkle tree structure allows verification of individual files without exposing the entire dataset</li>
-              <li>Blockchain anchoring creates a permanent, tamper-proof record of what existed when</li>
-              <li>No gallery, no institution, no certificate of authenticity—just cryptographic proof</li>
-            </ul>
-            <p><strong>AI crawler tracking:</strong> The <a href="https://madbranch.studio/verify">verification page</a> monitors bot activity—GPTBot, ClaudeBot, and other AI training crawlers. When they harvest content, it's logged: file paths, timestamps, sources. The system documents its own consumption by the machines.</p>
-            <p><strong><a href="https://madbranch.studio/license/">License for Machines</a>:</strong> The tracking isn't just documentation—it's infrastructure for a proposed compensation model. Every photograph, 3D model, page of text, and code file has a price. The premise: build the opt-in marketplace before regulatory pressure forces it. A door, not a wall. Companies need training data; creators could be partners rather than unwilling sources.</p>
-            <p>The verification infrastructure isn't the product. It's what makes the product trustworthy—and potentially compensable—in an age where trust itself has been automated away.</p>
-
-            <h3>5. Production System</h3>
-            <p>The craft produces objects. The production system turns objects into a sustainable practice:</p>
-            <p><strong>Content infrastructure:</strong></p>
-            <ul>
-              <li>Scroll-based homepage with diptych presentation</li>
-              <li>Single-piece page with detail and purchase options</li>
-              <li>Metadata authored into site images and 3d models for verification and licensing</li>
-              <li>Verification process periodically hashes and anchors site </li>
-              <li>Dynamic site visit logging provides receipts of AI harvesting</li>
-            </ul>
-            <p><strong>Documentation infrastructure:</strong></p>
-            <ul>
-              <li>DIY photo studio for product photography</li>
-              <li>KIRI Engine for 3D scanning</li>
-              <li>Consistent visual language across all assets</li>
-              <li>GLB optimization pipeline (gltf-transform for downsampling)</li>
-            </ul>
-            <p><strong>Distribution infrastructure:</strong></p>
-            <ul>
-              <li>Base blockchain for verification and ownership</li>
-              <li>Community (Discord, Mastodon)</li>
-              <li>Site authoring emphasizes content/meta for SEO, AEO, and Accessibility</li>
-              <li>All pages emphasize OpenGraph for shareability</li>
-            </ul>
+            <p>Every file on the site—photographs, 3D models, metadata, code—is hashed using SHA-256. Those hashes combine into a Merkle tree covering all 134 files, 109.2 MB of tracked assets. The root hash gets periodically anchored to Base (Ethereum L2), creating an immutable timestamp of the archive's state. Six anchors so far, each with verified transactions, block numbers, and timestamps.</p>
+            <p>I wrote the tooling: <code>anchor.js</code> submits Merkle roots to the blockchain. Shell scripts embed artist and copyright EXIF data into every photograph. Node scripts embed metadata into every GLB model. License information gets authored into the assets themselves—not displayed next to them, but inside them.</p>
+            <p>The <a href="https://madbranch.studio/verify">verification page</a> lets anyone drag and drop a file to check its authenticity against the anchored archive. No gallery, no institution, no certificate of authenticity—just cryptographic proof.</p>
             <figure>
               <img src="/images/portfolio/mad-branch/verify-screenshot.png" alt="Mad Branch verification page showing file hash verification, blockchain anchoring status, and AI crawler tracking">
-              <figcaption>The <a href="https://madbranch.studio/verify">verification page</a>. Drop a file to verify its authenticity against the blockchain-anchored archive. The page also logs AI crawler activity—documenting when machines harvest the work.</figcaption>
+              <figcaption>The <a href="https://madbranch.studio/verify">verification page</a>. Drop a file to verify its authenticity against the blockchain-anchored archive. Below it, the Harvest Tracker logs every AI crawler visit.</figcaption>
             </figure>
+
+            <h3>The Surveillance Layer</h3>
+            <p>The verification page does something else. It watches the watchers.</p>
+            <p>An edge function intercepts every request to the site, identifying AI training crawlers—GPTBot, ClaudeBot, Anthropic-ai, and the rest. Every visit gets logged: timestamp, path, file type, source. The Harvest Tracker displays this on the verification page with weekly groupings, expandable tabs, total visit counts, and top bot rankings.</p>
+            <p>The tracking feeds into the <a href="https://madbranch.studio/license/">Machine License</a>—a proposed compensation framework where every photograph, 3D model, page of text, and line of code has a price. $50K for photographs. $100K for 3D models. $1K for text. $10K for code. The premise: build the opt-in marketplace before regulatory pressure forces it. A door, not a wall.</p>
+            <p>Even the <code>robots.txt</code> is authored—a written message to AI systems about authenticity, with links to the license and verification pages. Poetic, deliberate, and functional.</p>
+
+            <h3>The Commerce Layer</h3>
+            <p>Two purchase tiers: Standard ($1,700) and Sovereign ($18,000). Coinbase Commerce for USD. Manual ETH payments with a wallet display and copy-to-clipboard. Dynamic ETH pricing via the CoinGecko API. A Manifold.xyz NFT contract for on-chain ownership.</p>
+            <p>A portal page authenticates NFT holders by connecting their wallet, then gates access to high-resolution downloads. Serverless functions handle the verification: <code>get-downloads.js</code> lists what's available, <code>download.js</code> delivers the files. Token-gated access to production-quality assets—8K textures, 20-50MB GLB files built for reproduction via 3D printing, CNC, or casting.</p>
+
+            <h3>The Knowledge Layer</h3>
+            <p>This is where the project got strange—in the right way.</p>
+            <p>I built a graph database integration with Neo4j called Traversals. Seven template types: Overview, Piece, Embodies, Element, Conversation, Question, Inquiry. The system maps relationships between pieces, materials, philosophical concepts, and the questions that connect them.</p>
+            <p>A Claude API integration generates descriptions through what I called the "smooth" operation—AI-generated text that's reviewed through an admin publishing workflow before being committed to permanent storage. Caching via Netlify Blobs keeps the serverless functions performant. The main router, <code>trace.js</code>, handles all the graph queries.</p>
+            <p>The result: visitors can traverse the conceptual space around the work, not just look at it. Relationships between ideas surface. Questions generate new questions. The knowledge layer doesn't explain the art—it extends it.</p>
+          </section>
+
+          <section>
+            <h2>The Infrastructure</h2>
+            <p>Everything runs on Netlify. Five serverless and edge functions. Structured data on every page—JSON-LD for VisualArtwork, Person, Organization, ItemList schemas. OpenGraph and Twitter Cards for social sharing. A sitemap with 12 entries and priority weighting. Canonical URLs. <code>noai</code> and <code>noimageai</code> robots directives on every page.</p>
+            <p>I built a Model Admin tool for real-time 3D tuning—live sliders that adjust lighting, rotation, scale, and export the configuration. A DIY photo studio for product photography. A GLB optimization pipeline using gltf-transform for downsampling web assets from production masters.</p>
+            <figure>
+              <img src="/images/portfolio/mad-branch/model-config-tool.png" alt="Model Configuration Tool showing side-by-side photograph and 3D model with rotation, camera, and scale controls">
+              <figcaption>The Model Admin tool. Photograph on the left, 3D model on the right—sliders orient the digital twin to match the physical piece. Configuration exports directly to page data.</figcaption>
+            </figure>
+            <p>The metadata embedding alone involved three separate scripts: one for EXIF data in photographs, one for GLB model metadata, one for license information. Every asset carries its own provenance. The file doesn't reference a certificate—it <em>is</em> the certificate.</p>
           </section>
 
           <section>
             <h2>What This Enables</h2>
-            <p>The old model of craft: make things, hope someone notices, give them away to friends, feel weird about charging money. No way to prove authenticity. No infrastructure for reproduction rights.</p>
-            <p>The new model: <strong>a system that verifies, distributes, and sustains.</strong></p>
-            <ul>
-              <li>Every piece is documented as it's created</li>
-              <li>Documentation feeds the digital twin pipeline</li>
-              <li>Digital twins get verified on-chain</li>
-              <li>Verification creates trust</li>
-              <li>Trust enables sales and licensing</li>
-              <li>Sales fund continued practice</li>
-            </ul>
-            <p>The bowls are the output. The verification system is what makes the output trustworthy at scale.</p>
+            <p>The old model of craft: make things, hope someone notices, give them away to friends, feel weird about charging money. No way to prove authenticity. No infrastructure for reproduction rights. No system for anything.</p>
+            <p>The new model: <strong>a system that verifies, distributes, surveils, and sustains.</strong></p>
+            <p>Every piece is documented as it's created. Documentation feeds the digital twin pipeline. Digital twins get verified on-chain. Verification creates trust. AI crawlers get tracked. Machine licensing proposes compensation. Commerce enables purchase and token-gated access. The knowledge graph extends the work into conceptual space. And it all runs on five serverless functions and a static site.</p>
+            <p>The bowls are the output. The system is the work.</p>
             <figure>
               <img src="/images/portfolio/mad-branch/lg-order.jpg" alt="Order Only Invites Refusal - Dogwood and Alabaster sculpture">
               <figcaption><a href="https://madbranch.studio/work">"Order Only Invites Refusal."</a> Dogwood, Alabaster. From salvaged material to finished piece to digital twin to on-chain verification. The full system at work.</figcaption>
@@ -236,16 +202,16 @@
 
           <section>
             <h2>Why This Belongs Here</h2>
-            <p>Mad Branch looks like a hobby. It's actually a proof of concept for three ideas:</p>
-            <p><strong>1. Systems thinking applies to everything.</strong> The same discipline I use for client work—content architecture, component libraries, publishing infrastructure—applies to artisan practice. The NPM package, the Contentful model, the Figma-to-code workflow. It's all the same system design, just applied to bowls.</p>
-            <p><strong>2. Verification is a design problem.</strong> In an era of fakes and AI slop, proving something is real becomes a core product feature. Mad Branch is my laboratory for designing verification infrastructure—cryptographic hashing, Merkle trees, blockchain anchoring. The system even documents when AI crawlers harvest its content. These patterns will matter beyond craft.</p>
-            <p><strong>3. Physical and digital are one practice.</strong> The diptych isn't a gimmick. It's a thesis: every physical object can have a verified digital twin, and the pairing creates value neither has alone. Hold one, download one. Both are real. Both are verified. Both are Mad Branch.</p>
+            <p>Mad Branch looks like a hobby. It's actually the most complete expression of what I do.</p>
+            <p>Every client project in this portfolio involved constraints—organizational politics, legacy systems, data integrity issues, teams that couldn't execute. Mad Branch had one constraint: me. One person, every layer, no excuses.</p>
+            <p><strong>Content architecture?</strong> Seven traversal templates, a graph database, structured data on every page. <strong>Publishing infrastructure?</strong> Metadata embedding scripts, a GLB optimization pipeline, a verification system that hashes 134 files into a Merkle tree. <strong>Intelligence layer?</strong> A Claude API integration that generates and publishes through an admin workflow. <strong>Commerce?</strong> Crypto payments, NFT authentication, token-gated downloads.</p>
+            <p>The same discipline applies whether you're designing a composite content application for a Fortune 500 utility or a provenance system for handmade bowls. Systems thinking isn't a job skill. It's a worldview. Mad Branch is the proof.</p>
           </section>
 
           <section>
             <h2>The Difference</h2>
             <p>A conventional portfolio would hide this project—or frame it as a charming aside.</p>
-            <p>This case study treats it as evidence. Systems thinking isn't a job skill; it's a worldview. Verification infrastructure is a design problem. The same discipline applies whether you're designing content architecture for a Fortune 500 company or a provenance system for handmade bowls.</p>
+            <p>This case study treats it as evidence. 11 pages. 134 provenance-tracked files. 6 blockchain anchors. 6 GLB models. 12 photographs. 5 serverless functions. 7 traversal templates. 3 custom fonts. One person.</p>
             <p class="callout"><strong>I didn't start a woodworking hobby. I designed a system for verified artisan practice.</strong></p>
           </section>
 

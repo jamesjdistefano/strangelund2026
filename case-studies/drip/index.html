@@ -117,33 +117,26 @@
         <div class="article-content">
           <section>
             <h2>The Problem</h2>
-            <p>Email marketing platforms are dashboards for the past.</p>
-            <p>Open rates. Click rates. Revenue attributed. Unsubscribes. Every ESP shows you what already happened—metrics that confirm or disappoint, but don't tell you what to do next.</p>
-            <p>The dirty secret: email marketing software is incredibly powerful and almost no one uses it well. Small ecommerce businesses stare at dashboards full of data and still can't answer the basic question: where am I losing customers, and what should I do about it?</p>
-            <p>Drip had this problem. Klaviyo had this problem. Everyone had this problem. The platforms competed on features—more automations, more integrations, more templates—while customers churned because they couldn't translate data into action.</p>
-            <p>Users weren't frustrated by lack of data. They were drowning in it. <strong>The frustration was lack of direction.</strong> Every ESP kept giving them better dashboards, more metrics, more segmentation options. Solving the wrong problem with more precision.</p>
-            <p>The job-to-be-done wasn't "show me what happened." It was "tell me what to do." That's not a micro-level UX fix. Not moving a button or improving a flow. It's recognizing that the product paradigm itself was broken.</p>
-            <p>The customers who needed help most were what Drip would later call "The Nurture Marketer"—strategic marketers at B2C SMBs selling products with longer consideration cycles. Content creators. Event organizers. Larger-ticket physical goods. These aren't impulse purchases. Customers need nurturing through a journey: Interest → Consideration → Decision → Retention → Advocacy.</p>
-            <p>The Nurture Marketer already thinks in intervention points. They just didn't have a platform that thought the same way.</p>
-            <p class="callout"><strong>The real gap:</strong> No system existed to turn behavioral metrics into marketing interventions.</p>
+            <p>Drip was an eight-year-old product Frankensteined together across multiple eras. Loved by some customers, frustrating others. A team of nine that contracted to six in a RIF. And a positioning problem nobody had solved.</p>
+            <p>Since 2018, Drip had positioned as "eCRM." But that race was over. Klaviyo won it—integrate with Shopify and you're off and running. Drip was competing for ecommerce customers against a company that had already locked them up.</p>
+            <p>Revenue and NPS told the story. The company knew something was wrong. They didn't know what to do about it.</p>
+            <p>It was the first job in twenty years I didn't network my way into. Cold application. The title was Principal UX Designer; the actual job was figuring out what Drip should become.</p>
+            <p class="callout"><strong>The question:</strong> If you can't win the ecommerce race, what race should you be running?</p>
+          </section>
+
+          <section>
+            <h2>The Insight</h2>
+            <p>The answer was already in the data. Drip's research showed which customers succeeded with the platform—and they weren't the ecommerce sellers Klaviyo was courting. They were marketers with higher-priced goods and longer, high-touch sales cycles. Content creators. Event organizers. Businesses where the purchase requires nurturing, not just a discount code.</p>
+            <p>I'd seen this pattern before. At Mailchimp, I'd learned that customers who understood <em>why</em> to market—not just how to use the tool—were the ones who stuck. The Hawke Method, a framework for actionable marketing strategy, backed it up with specific metrics: time to first purchase, customer lifetime value, journey stage indicators. Metrics that predict revenue impact instead of just reporting it.</p>
+            <p>The customers Drip should be serving already think in intervention points. They just didn't have a platform that thought the same way.</p>
+            <p>I named the customer: <strong>The Nurture Marketer.</strong> Strategic marketers at B2C SMBs selling products with longer consideration cycles. People who market <em>on time</em> (the right message at the right moment) and <em>over time</em> (nurturing the relationship across the entire lifecycle).</p>
           </section>
 
           <section>
             <h2>The System</h2>
-            <p>I designed an intelligence layer that answers a different question than traditional ESP dashboards.</p>
-            <p>Not "what happened?" but <strong>"where should you intervene, and what should you do?"</strong></p>
+            <p>Every ESP answers the same question: "What happened?" I designed an intelligence layer that answers a different one: <strong>"Where should you intervene, and what should you do?"</strong></p>
 
-            <h3>The Underlying Model</h3>
-            <p>I started with The Hawke Method framework and extracted the metrics that actually predict revenue impact:</p>
-            <ul>
-              <li><strong>Time to First Purchase:</strong> How long from signup to first conversion? This is the speed metric—how quickly can you move someone through the funnel?</li>
-              <li><strong>Customer Lifetime Value:</strong> What's a customer worth across their entire relationship? This is the depth metric—how much value can you extract over time?</li>
-              <li><strong>Journey stage indicators:</strong> Where in the customer lifecycle is someone, and what does movement (or stagnation) at each stage mean?</li>
-            </ul>
-            <p>These metrics aren't new. What's new is using them as the basis for a system that identifies intervention points. The insight: marketing isn't just about reaching customers <em>on time</em> (the right message at the right moment). It's about reaching them <em>over time</em> (nurturing the relationship across the entire lifecycle).</p>
-            <p>Speed to purchase. Depth of relationship. These became the twin poles of the intervention system.</p>
-
-            <h3>The Logic Layer</h3>
+            <h3>The Intelligence Layer</h3>
             <p>Traditional ESPs say: "Here's your dashboard. Here are your segments. Here are your automations. Good luck."</p>
             <p>The system I designed inverts this. It says:</p>
             <ul>
@@ -151,27 +144,27 @@
               <li>"Your time-to-first-purchase is 12 days. Customers who don't convert by day 8 rarely convert at all. Here's where to intervene."</li>
               <li>"This segment is entering churn risk. Here's a campaign type that works for this pattern."</li>
             </ul>
-            <p><strong>The platform identifies the intervention point. The customer executes the campaign.</strong></p>
-            <p>And critically: this could be automated. Segment entry triggers the intervention. The system doesn't just surface insight—it acts on it.</p>
+            <p><strong>The platform identifies the intervention point. The customer executes the campaign.</strong> And critically: this could be automated. Segment entry triggers the intervention. The system doesn't just surface insight—it acts on it.</p>
+
+            <h3>The Prototype</h3>
+            <p>I designed the system in Figma and used v0 to translate designs into working code—a prototype that could hit real customer data and calculate metrics across time periods. The goal was a live proof of concept, not a pitch deck.</p>
+            <p>Drip's data was closely guarded. I worked with the Data Science team to get access. And when we connected the prototype to real data, the system broke almost immediately.</p>
           </section>
 
           <section>
-            <h2>Why It Didn't Ship</h2>
-            <p>Leadership validated the vision. The board approved. Product leadership aligned.</p>
-            <p>But the data was foul. One-third of the time, our calculations of time to first purchase returned negative days. A backfill had corrupted the underlying records.</p>
-            <p>And the will wasn't there. The roadmap stayed incremental. The vision got shelved.</p>
-            <p>A system is only as good as the infrastructure underneath it and the organizational capacity to execute it. I designed something strategically right and operationally impossible—not because the idea was flawed, but because the foundation (data) and the vehicle (org willingness) couldn't support it.</p>
-            <p>This is why I now treat data integrity and organizational appetite as design constraints, not downstream concerns.</p>
+            <h2>What Killed It</h2>
+            <p>The data was foul. One-third of the time, our calculations of time to first purchase returned negative days. A backfill had corrupted the underlying records. You can't build an intelligence layer on a foundation that tells you customers bought things before they existed.</p>
+            <p>Finding the corrupted data was the end of my belief that the product vision could ship. A system is only as good as the infrastructure underneath it. I'd designed something strategically right and operationally impossible—not because the idea was flawed, but because the data couldn't support it.</p>
           </section>
 
           <section>
-            <h2>The Strategic Pivot</h2>
-            <p>Drip had positioned as "eCRM" since 2018, but the positioning was stuck. Revenue and NPS told the story: the product had a problem. The company knew something was wrong. They didn't know what to do about it.</p>
-            <p>I codified the solution. The Nurture Marketing positioning. The intervention-based product model. The shift from acquisition-oriented customers to retention-focused businesses—the Nurture Marketers who needed time-based intelligence.</p>
-            <p>Then I sold it. To my VP. To the C-level. To the board (via the C-level). And finally, to the entire company in an all-hands meeting that set the new direction.</p>
+            <h2>What Survived</h2>
+            <p>The intelligence layer didn't ship. The strategic repositioning did.</p>
+            <p>My VP got it immediately. The C-level had been looking for a direction that wasn't eCRM, and the Nurture Marketing positioning fit with every piece of research showing which customers thrived on the platform and which churned.</p>
+            <p>I sold the vision up the chain. VP. C-level. Board (via the C-level). And finally, the entire company in an all-hands meeting that set the new direction.</p>
             <p>The new company vision: <strong>"The world's most powerful Nurture Marketing Platform."</strong></p>
             <p>The mission: "Empowering B2C SMBs to convert long-sales-cycle prospects into lifelong buyers through marketing automations."</p>
-            <p>The dashboard didn't ship. The strategic vision did—because I built the case and carried it up the chain.</p>
+            <p>The project stalled. Drip never expanded to the Nurture positioning. The company was sold and most of the team laid off.</p>
           </section>
 
           <section>
@@ -180,7 +173,7 @@
             <p>More automations, more integrations, more templates—these are commodity features. The defensible product is the one that tells customers what to do and when to do it. The one that turns data into decisions.</p>
             <p>Klaviyo doesn't do this. Mailchimp doesn't do this. The entire category is stuck on "here's what happened" when the customer is asking "what should I do?"</p>
             <p>The proof is in the customers who get it. OneCommune—a Drip customer—generates 95% of their revenue through the platform. 17% year-over-year growth. They're not using Drip as a broadcast tool. They're using it as a nurture engine, marketing on time and over time.</p>
-            <p>That's the future of the category, whether Drip fully builds it or someone else does.</p>
+            <p>That's the future of the category. Drip won't build it. Someone else will.</p>
           </section>
 
           <aside class="contact-callout">

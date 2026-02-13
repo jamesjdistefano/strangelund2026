@@ -466,31 +466,12 @@ a:focus-visible {
 
 /* Compact Card Variant */
 .case-study-card--compact {
-  padding: var(--space-sm) var(--space-md);
   background-color: transparent;
   border-color: rgba(51, 51, 51, 0.5);
 }
 
 .case-study-card--compact:hover {
   background-color: var(--color-bg-secondary);
-}
-
-.case-study-card--compact .case-study-card__client {
-  font-size: var(--text-sm);
-  margin-bottom: var(--space-2xs);
-}
-
-.case-study-card--compact .case-study-card__summary {
-  font-size: var(--text-xs);
-}
-
-.case-study-card--compact .case-study-card__summary em {
-  display: inline;
-  margin-top: 0;
-}
-
-.case-studies-grid--compact {
-  gap: var(--space-sm);
 }
 
 /* ==========================================================================

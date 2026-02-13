@@ -1,0 +1,20 @@
+# Strangelund
+
+> Portfolio of James DiStefano, Principal Experience Architect. I design systems that make experiences possible. Content architectures, intelligence layers — the logic underneath, not the screens on top.
+
+## Pages
+
+- [Home](https://strangelund.com/): Case study index and thesis statement
+- [About](https://strangelund.com/about/): Background, philosophy, what I do and don't do
+- [Contact](https://strangelund.com/contact/): How to reach me and what I'm looking for
+
+## Case Studies
+
+- [My Current Work](https://strangelund.com/case-studies/current-work/): Under NDA. A thesis about the design problem nobody owns — the intelligence layer between raw data and product decisions.
+- [Drip](https://strangelund.com/case-studies/drip/): Every email platform shows what already happened. I designed an intelligence layer that tells you what to do next. The vision shipped as a strategic repositioning; the product didn't survive.
+- [Southern Company Gas](https://strangelund.com/case-studies/southern-company-gas/): Five brands, four regional utilities, one parent company. I built a composite content application — author once, publish everywhere. Live since 2022.
+- [Mad Branch Studio](https://strangelund.com/case-studies/mad-branch/): 134 provenance-tracked files. 6 blockchain anchors. 26 sculptures. One person. A verification and publishing system for handmade artisan work.
+- [Grammarly](https://strangelund.com/case-studies/grammarly/): Grammarly owned writing. Nobody owned reading. In 2022, I designed an AI system to turn email into a knowledge graph.
+- [Mailchimp](https://strangelund.com/case-studies/mailchimp/): Customers knew how to click Send. They didn't know why. I designed a system for manufacturing marketing competence — including the Stray Cat Program, where the content team adopted real businesses as clients.
+- [Super Deluxe](https://strangelund.com/case-studies/super-deluxe/): A 1-to-5 A.M. slot nobody wanted. Four people. Original comedy to cultural phenomenon to broadcast television. Turner's first network without a cable channel.
+- [Rock and Roll Hall of Fame](https://strangelund.com/case-studies/rock-hall/): "Create a dialogue around stories told from our perspective of authority." One strategic line; every decision flowed from it. Store traffic up 13,000%.

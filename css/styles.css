@@ -367,7 +367,7 @@ a:focus-visible {
   text-decoration: none;
   margin-bottom: var(--space-2xl);
   position: relative;
-  transition: border-color 0.15s ease, background-color 0.15s ease;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.25s ease;
 }
 
 
@@ -392,7 +392,7 @@ a:focus-visible {
   border-radius: 4px;
   color: var(--color-text);
   text-decoration: none;
-  transition: border-color 0.15s ease, background-color 0.15s ease;
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.25s ease;
 }
 
 .case-study-card:hover {
@@ -462,6 +462,32 @@ a:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: var(--space-md);
+}
+
+/* Primary Card — Hover Glow */
+.case-study-card--current-work:hover {
+  border-color: rgba(77, 232, 255, 0.6);
+  box-shadow: 0 0 20px rgba(77, 232, 255, 0.1);
+}
+
+.case-study-card--drip:hover {
+  border-color: rgba(255, 77, 200, 0.6);
+  box-shadow: 0 0 20px rgba(255, 77, 200, 0.1);
+}
+
+.case-study-card--soco:hover {
+  border-color: rgba(77, 200, 255, 0.6);
+  box-shadow: 0 0 20px rgba(77, 200, 255, 0.1);
+}
+
+.case-study-card--mad-branch:hover {
+  border-color: rgba(255, 166, 77, 0.6);
+  box-shadow: 0 0 20px rgba(255, 166, 77, 0.1);
+}
+
+.case-study-card--grammarly:hover {
+  border-color: rgba(77, 255, 130, 0.6);
+  box-shadow: 0 0 20px rgba(77, 255, 130, 0.1);
 }
 
 /* Compact Card Variant */

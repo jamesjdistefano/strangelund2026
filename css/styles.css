@@ -880,6 +880,29 @@ a:focus-visible {
   justify-content: center;
 }
 
+.case-study-header--404 {
+  background-image: url('/images/headers/404-grove.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+.case-study-header--404::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.5;
+}
+
+.case-study-header--404 .case-study-header__inner {
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  justify-content: center;
+}
+
 .case-study-header__sub {
   font-size: var(--text-lg);
   color: var(--color-text);

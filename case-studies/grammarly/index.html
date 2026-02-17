@@ -118,7 +118,7 @@
           <section>
             <h2>The Problem</h2>
             <p>Email is where work lives—and dies.</p>
-            <p>Projects, decisions, people, documents, deadlines. All of it flows through email, accumulates in threads, gets lost in volume. The average knowledge worker spends hours per day in their inbox, most of it trying to extract what matters from what doesn't.</p>
+            <p>Projects, decisions, people, documents, deadlines. All of it flows through email, accumulates in threads, gets lost in volume. The average knowledge worker spends hours per day in their inbox, most of it trying to extract what matters from what doesn't. Sisyphus had a boulder. You have unread messages.</p>
             <p>Grammarly had built a dominant position in writing assistance. But writing is only half the communication problem. The other half is reading—comprehending, synthesizing, acting on the information buried in your inbox.</p>
             <p class="callout"><strong>The question Grammarly brought to us:</strong> Can AI help people read email the way Grammarly helps them write it?</p>
           </section>
@@ -133,7 +133,7 @@
               <li><strong>Entity recognition:</strong> Detect people, projects, organizations, terms</li>
               <li><strong>Question generation:</strong> Identify what an email asks or answers</li>
             </ul>
-            <p>Some capabilities were production-ready. Some were experimental. The design had to account for what was real, not what was theoretically possible.</p>
+            <p>Some capabilities were production-ready. Some were experimental. Designing for AI capability that doesn't exist yet is science fiction. Designing for AI capability that ships next quarter is engineering. The gap between those two is where most AI products go to die.</p>
           </section>
 
           <section>
@@ -152,7 +152,7 @@
             </ul>
 
             <h3>The Architecture</h3>
-            <p>The system extracts entities from every email, relates them to each other, and builds a knowledge graph over time. When you read a new message, the assistant surfaces:</p>
+            <p>The system extracts entities from every email, relates them to each other, and builds a knowledge graph over time. The graph gets smarter the way compound interest gets richer: slowly, then obviously. When you read a new message, the assistant surfaces:</p>
             <ul>
               <li>A summary of the thread</li>
               <li>The people mentioned, with context from past correspondence</li>
@@ -162,8 +162,8 @@
             <p>The experience lives in a Chrome extension, overlaid on Gmail. Users opt in to ingestion. The system learns as you work.</p>
 
             <h3>The MVP</h3>
-            <p>I defined the minimum viable version: "I save what's important. I give it context. Reader surfaces it when I write."</p>
-            <p>I mapped each design concept to a specific AI capability Grammarly could ship today—not next year. Where extractive summarization was production-ready, we leaned on it. Where abstractive summarization was experimental, we designed fallbacks. The flow diagrams were engineering specs, not pitch decks—they showed integration points with Gmail, data dependencies, and failure states.</p>
+            <p>I defined the minimum viable version: "I save what's important. I give it context. Reader surfaces it when I write." One sentence. The whole product in seventeen words.</p>
+            <p>I mapped each design concept to a specific AI capability Grammarly could ship today—not next year. Where extractive summarization was production-ready, we leaned on it. Where abstractive summarization was experimental, we designed fallbacks. The flow diagrams were engineering specs, not pitch decks—they showed integration points with Gmail, data dependencies, and failure states. (Failure states are the part of the design most designers skip. They're the part that matters most when the system meets the world.)</p>
           </section>
 
           <section>
@@ -175,7 +175,7 @@
               <li><strong>2022-era AI could support the vision.</strong> By mapping ambitious goals to realistic capabilities, the design proved that email comprehension didn't require future technology. Extractive summarization, entity recognition, question detection—the pieces existed. The system design made them cohere.</li>
               <li><strong>The entity model extends beyond email.</strong> People, projects, documents, questions—these aren't email-specific. The same architecture could structure knowledge from Slack, Notion, Google Docs. The design was a foundation, not a feature.</li>
             </ul>
-            <p>In under six months, we went from idea to working code. The product didn't launch. The proof of concept held.</p>
+            <p>In under six months, we went from idea to working code. The product didn't launch. The proof of concept held. Patient, correct, waiting for the infrastructure to catch up with the insight.</p>
           </section>
 
           <aside class="contact-callout">

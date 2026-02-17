@@ -119,7 +119,7 @@
             <h2>The Problem</h2>
             <p>Craft exists in opposition to system. Or so the story goes.</p>
             <p>The maker works with their hands, responds to material, follows intuition. The technologist builds repeatable processes, scales output, optimizes efficiency. Different worlds.</p>
-            <p>But that framing is wrong. Every serious craftsperson operates within systems—they just don't always name them. Grain direction. Wall thickness ratios. Tool geometry. Finishing chemistry. Constraints that shape possibility. The artisan who ignores them makes bad work. The artisan who masters them makes work that looks like intuition but is actually informed response within a defined system.</p>
+            <p>But that framing is wrong. Every serious craftsperson operates within systems—they just don't always name them. Grain direction. Wall thickness ratios. Tool geometry. Finishing chemistry. Constraints that shape possibility. The artisan who ignores them makes bad work. The artisan who masters them makes work that looks like intuition but is actually informed response within a defined system. The difference between jazz and noise is that the jazz player knows the theory well enough to break it on purpose.</p>
             <p class="callout"><a href="https://madbranch.studio">Mad Branch</a> is my laboratory for this idea: <strong>What happens when you design the system around the craft—including the system that verifies the craft is real?</strong></p>
             <figure>
               <img src="/images/portfolio/mad-branch/lg-reclaim.jpg" alt="Reclamation Is A Kind of Faith - Box Elder sculpture">
@@ -137,7 +137,7 @@
 
           <section>
             <h2>What I Built</h2>
-            <p>Mad Branch isn't a portfolio piece with a few glamour shots and a paragraph about process. It's 11 pages, 134 provenance-tracked files, 6 blockchain anchors, 5 serverless functions, and a graph database—all designed, authored, and coded by one person.</p>
+            <p>Mad Branch isn't a portfolio piece with a few glamour shots and a paragraph about process. It's 11 pages, 134 provenance-tracked files, 6 blockchain anchors, 5 serverless functions, and a graph database—all designed, authored, and coded by one person. (Which is either admirable or clinical, depending on your tolerance for people who build blockchain verification systems for handmade bowls.)</p>
             <p>Here's what that actually means.</p>
 
             <h3>The Craft Layer</h3>
@@ -159,7 +159,7 @@
             <p>This is where Mad Branch becomes a systems project, not just a craft project.</p>
             <p>Every file on the site—photographs, 3D models, metadata, code—is hashed using SHA-256. Those hashes combine into a Merkle tree covering all 134 files, 109.2 MB of tracked assets. The root hash gets periodically anchored to Base (Ethereum L2), creating an immutable timestamp of the archive's state. Six anchors so far, each with verified transactions, block numbers, and timestamps.</p>
             <p>I wrote the tooling: <code>anchor.js</code> submits Merkle roots to the blockchain. Shell scripts embed artist and copyright EXIF data into every photograph. Node scripts embed metadata into every GLB model. License information gets authored into the assets themselves—not displayed next to them, but inside them.</p>
-            <p>The <a href="https://madbranch.studio/verify">verification page</a> lets anyone drag and drop a file to check its authenticity against the anchored archive. No gallery, no institution, no certificate of authenticity—just cryptographic proof.</p>
+            <p>The <a href="https://madbranch.studio/verify">verification page</a> lets anyone drag and drop a file to check its authenticity against the anchored archive. No gallery, no institution, no certificate of authenticity—just cryptographic proof. The blockchain knows what the wood already knew. Neither needs the other to be true.</p>
             <figure>
               <img src="/images/portfolio/mad-branch/verify-screenshot.png" alt="Mad Branch verification page showing file hash verification, blockchain anchoring status, and AI crawler tracking">
               <figcaption>The <a href="https://madbranch.studio/verify">verification page</a>. Drop a file to verify its authenticity against the blockchain-anchored archive. Below it, the Harvest Tracker logs every AI crawler visit.</figcaption>
@@ -184,13 +184,14 @@
 
           <section>
             <h2>The Infrastructure</h2>
+            <p>The infrastructure of a company built for an audience of one.</p>
             <p>Everything runs on Netlify. Five serverless and edge functions. Structured data on every page—JSON-LD for VisualArtwork, Person, Organization, ItemList schemas. OpenGraph and Twitter Cards for social sharing. A sitemap with 12 entries and priority weighting. Canonical URLs. <code>noai</code> and <code>noimageai</code> robots directives on every page.</p>
             <p>I built a Model Admin tool for real-time 3D tuning—live sliders that adjust lighting, rotation, scale, and export the configuration. A DIY photo studio for product photography. A GLB optimization pipeline using gltf-transform for downsampling web assets from production masters.</p>
             <figure>
               <img src="/images/portfolio/mad-branch/model-config-tool.png" alt="Model Configuration Tool showing side-by-side photograph and 3D model with rotation, camera, and scale controls">
               <figcaption>The Model Admin tool. Photograph on the left, 3D model on the right—sliders orient the digital twin to match the physical piece. Configuration exports directly to page data.</figcaption>
             </figure>
-            <p>The metadata embedding alone involved three separate scripts: one for EXIF data in photographs, one for GLB model metadata, one for license information. Every asset carries its own provenance. The file doesn't reference a certificate—it <em>is</em> the certificate.</p>
+            <p>The metadata embedding alone involved three separate scripts: one for EXIF data in photographs, one for GLB model metadata, one for license information. Every asset carries its own provenance. The file doesn't reference a certificate—it <em>is</em> the certificate. The wood carries its own history in its grain whether anyone reads it or not.</p>
           </section>
 
           <section>
@@ -214,7 +215,7 @@
             <p>Mad Branch looks like a hobby. It's actually the most complete expression of what I do.</p>
             <p>Every client project in this portfolio involved constraints—organizational politics, legacy systems, data integrity issues, teams that couldn't execute. Mad Branch had one constraint: me. One person, every layer, no excuses.</p>
             <p><strong>Content architecture?</strong> Seven traversal templates, a graph database, structured data on every page. <strong>Publishing infrastructure?</strong> Metadata embedding scripts, a GLB optimization pipeline, a verification system that hashes 134 files into a Merkle tree. <strong>Intelligence layer?</strong> A Claude API integration that generates and publishes through an admin workflow. <strong>Commerce?</strong> Crypto payments, NFT authentication, token-gated downloads.</p>
-            <p>The same discipline applies whether you're designing a composite content application for a Fortune 500 utility or a provenance system for handmade bowls. Systems thinking isn't a job skill. It's a worldview. Mad Branch is the proof.</p>
+            <p>The same discipline applies whether you're designing a composite content application for a Fortune 500 utility or a provenance system for wood with holes in it. Systems thinking isn't a job skill. It's a worldview. Mad Branch is the proof.</p>
           </section>
 
           <aside class="contact-callout">

@@ -117,17 +117,17 @@
         <div class="article-content">
           <section>
             <h2>The Problem</h2>
-            <p>Southern Company Gas operates a parent brand and four regional utilities. Each has its own site, its own content needs, its own stakeholders—but they're all saying versions of the same things. Safety information. Rate updates. Service announcements. Corporate communications.</p>
+            <p>Southern Company Gas operates a parent brand and four regional utilities. Each has its own site, its own content needs, its own stakeholders—but they're all saying versions of the same things. Safety information. Rate updates. Service announcements. Corporate communications. The same sermon preached to five congregations, each convinced theirs is unique.</p>
             <p>The existing approach: each site maintained independently. Same content rewritten multiple times. Inconsistent messaging. No shared infrastructure. Every update multiplied by five.</p>
             <p>Production involved multiple groups inside and outside the company. Publishing required external vendor assistance. Even simple copy edits underwent process—they couldn't "just change the copy" on their own.</p>
-            <p>So the content devolved to PDFs. A public utility posting PDF files in multiple languages on a website. Any time something had to go out, a PDF was posted. We constantly had to train them to think web page first, PDF only in cases that demanded it—like Chinese or Korean language versions. It was staggeringly bad.</p>
+            <p>So the content devolved to PDFs. A public utility posting PDF files in multiple languages on a website. Any time something had to go out, a PDF was posted. We constantly had to train them to think web page first, PDF only in cases that demanded it—like Chinese or Korean language versions. (There is no polite way to say "staggeringly bad" about a Fortune 500's web presence. There is also no inaccurate way.)</p>
             <p class="callout"><strong>The question:</strong> How do you unify content production, design, and publishing across five properties without creating five times the work?</p>
           </section>
 
           <section>
             <h2>How I Got Here</h2>
             <p>My work partner had been brought on as a consultant and stepped into a project far too big for one person. He brought me in to handle strategy, content, and governance. I ended up learning Vue.js, writing code, pushing to Git, and deploying to Netlify. The work demanded it—there was too much to divide cleanly into design and dev. We both did everything that needed doing.</p>
-            <p>The full team was four external people: the two of us, a dedicated content person, and a contract designer—working with a host of internal stakeholders across the parent company and four regional utilities.</p>
+            <p>The full team was four external people: the two of us, a dedicated content person, and a contract designer—working with a host of internal stakeholders across the parent company and four regional utilities. Four people. Five brands. Three hundred pages. The math doesn't work until you build the system that makes it work.</p>
           </section>
 
           <section>
@@ -136,9 +136,10 @@
             <p>We built publishing to five sites without being asked. It was just the smartest solution for the content distribution problems we faced.</p>
 
             <h3>Content Governance</h3>
-            <p>We developed systems that solicited and approved content ideas, created a production process spanning writing, editing, and visualization, and allowed publishing to one or more websites. We taught our philosophy to internal employees and outside agencies responsible for asset production.</p>
+            <p>We developed systems that solicited and approved content ideas, created a production process spanning writing, editing, and visualization, and allowed publishing to one or more websites. We taught our philosophy to internal employees and outside agencies responsible for asset production. Teaching people a philosophy is harder than building an application. The application does what you tell it. People have opinions about PDFs.</p>
 
             <h3>Content Model</h3>
+            <p>The architecture has to accommodate both indifference and urgency.</p>
             <p>Using Google's Zero Moment of Truth framework, we uncovered questions a user would ask, wrote answers, removed redundancies, and arranged content from very broad questions to very specific ones. Promotional pages answered broad questions. Leaf pages answered specific questions about a subject.</p>
             <figure>
               <img src="/images/portfolio/southern-company-gas/socog-example-02.png" alt="Diagram showing progression from unstructured information to querying hierarchy to content written to hierarchy to content deployed in pattern library">
@@ -165,7 +166,7 @@
             <p>The old model: five sites, five sets of content, five update cycles, five chances for inconsistency.</p>
             <p>The new model: <strong>author once, publish everywhere.</strong> A single content source inherits brand-specific styling at the publishing layer. Update a safety guideline once; it propagates to all four regional sites and the parent.</p>
             <p>Roughly 300 pages across five properties. Twelve templates following the ZMOT line of thinking—broad questions at the top, specific answers at the leaves—plus custom pages for leadership and board. Proper structural code. Alt text partnered with images. Contrast ratios that pass. Accessible usability throughout. Search optimization baked in.</p>
-            <p>All five sites launched. The composite content application has been live since 2022 and is still running.</p>
+            <p>All five sites launched. The composite content application has been live since 2022 and is still running. Nobody sees the system. The system works. That's the whole point.</p>
           </section>
 
           <aside class="contact-callout">

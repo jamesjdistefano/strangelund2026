@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mad Branch Studio | Strangelund</title>
-  <meta name="description" content="134 provenance-tracked files. 6 blockchain anchors. 5 serverless functions. 26 sculptures. One person.">
+  <meta name="description" content="186 provenance-tracked files. 9 blockchain anchors. 18 MCP tools. 26 sculptures. One person.">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://strangelund.com/case-studies/mad-branch/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Mad Branch Studio | Strangelund">
-  <meta property="og:description" content="134 provenance-tracked files. 6 blockchain anchors. 5 serverless functions. 26 sculptures. One person.">
+  <meta property="og:description" content="186 provenance-tracked files. 9 blockchain anchors. 18 MCP tools. 26 sculptures. One person.">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://strangelund.com/case-studies/mad-branch/">
@@ -22,7 +22,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mad Branch Studio | Strangelund">
-  <meta name="twitter:description" content="134 provenance-tracked files. 6 blockchain anchors. 5 serverless functions. 26 sculptures. One person.">
+  <meta name="twitter:description" content="186 provenance-tracked files. 9 blockchain anchors. 18 MCP tools. 26 sculptures. One person.">
   <meta name="twitter:image" content="https://strangelund.com/images/og-mad-branch.png">
 
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -53,7 +53,7 @@
         "@type": "Article",
         "@id": "https://strangelund.com/case-studies/mad-branch/#article",
         "headline": "Mad Branch Studio",
-        "description": "134 provenance-tracked files. 6 blockchain anchors. 5 serverless functions. 26 sculptures. One person.",
+        "description": "186 provenance-tracked files. 9 blockchain anchors. 18 MCP tools. 26 sculptures. One person.",
         "url": "https://strangelund.com/case-studies/mad-branch/",
         "isPartOf": { "@id": "https://strangelund.com/#website" },
         "author": { "@id": "https://strangelund.com/#person" },
@@ -99,7 +99,7 @@
   <header class="case-study-header case-study-header--mad-branch">
     <div class="container case-study-header__inner">
       <h1 class="case-study-header__title">Mad Branch</h1>
-      <p class="case-study-header__lede">134 provenance-tracked files. 6 blockchain anchors. 26 sculptures.</p>
+      <p class="case-study-header__lede">186 provenance-tracked files. 9 blockchain anchors. 18 MCP tools. 26 sculptures.</p>
       <p class="case-study-header__sub">One person.</p>
     </div>
   </header>
@@ -137,7 +137,7 @@
 
           <section>
             <h2>What I Built</h2>
-            <p>Mad Branch isn't a portfolio piece with a few glamour shots and a paragraph about process. It's 11 pages, 134 provenance-tracked files, 6 blockchain anchors, 5 serverless functions, and a graph database—all designed, authored, and coded by one person. (Which is either admirable or clinical, depending on your tolerance for people who build blockchain verification systems for handmade bowls.)</p>
+            <p>Mad Branch isn't a portfolio piece with a few glamour shots and a paragraph about process. It's 12 pages, 186 provenance-tracked files, 9 blockchain anchors, 18 MCP tools, 5 serverless functions, and a graph database—all designed, authored, and coded by one person. (Which is either admirable or clinical, depending on your tolerance for people who build blockchain verification systems for handmade bowls.)</p>
             <p>Here's what that actually means.</p>
 
             <h3>The Craft Layer</h3>
@@ -192,6 +192,12 @@
               <figcaption>The Model Admin tool. Photograph on the left, 3D model on the right—sliders orient the digital twin to match the physical piece. Configuration exports directly to page data.</figcaption>
             </figure>
             <p>The metadata embedding alone involved three separate scripts: one for EXIF data in photographs, one for GLB model metadata, one for license information. Every asset carries its own provenance. The file doesn't reference a certificate—it <em>is</em> the certificate. The wood carries its own history in its grain whether anyone reads it or not.</p>
+          </section>
+
+          <section>
+            <h2>The Headless Layer</h2>
+            <p>Eighteen tools registered on a headless MCP server; no dashboard, no frontend, no interface except the conversation itself. Claude interviews about a piece (materials, salvage story, techniques), writes structured data to a Neo4j graph, embeds provenance metadata into every file, builds a per-piece Merkle tree, uploads to IPFS, mints an NFT on Base through a Manifold Creator Contract, generates Coinbase Commerce checkout links, and writes a complete piece page to the live site. The graph stays in its lane for exploration; the filesystem stays in its lane for commerce. The whole system runs on seven modules and a <code>.env</code> file. The only button is language.</p>
+            <p>The token manager is simpler and meaner: a single HTML file that connects to MetaMask and talks directly to the contract. List every token, fetch metadata from IPFS or Arweave, update a token's URI when the metadata needs fixing, transfer to a buyer after payment clears, burn if something needs to stop existing. No framework, no server, no dependencies beyond ethers.js loaded from a CDN. I built blockchain verification infrastructure for handmade bowls, then built the admin tool to manage the verification infrastructure for the handmade bowls. (The infrastructure doesn't know it's funny. The infrastructure works.)</p>
           </section>
 
           <section>
